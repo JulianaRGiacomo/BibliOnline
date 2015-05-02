@@ -18,30 +18,58 @@
             <section id="main">
                 <h1>Cadastrar Livro</h1>
                 <form id="form" method="post" action="home.php">
-                    <input class="caixa" type="text" name="titulo" placeholder="Título" required autofocus>
-                    <input class="caixa" type="text" name="sub" placeholder="Subtítulo (se houver)">
-                    <input class="caixa" type="text" name="autor" placeholder="Autor (separe por vírgulas)" required>
-                    <input class="caixa" type="text" name="editora" placeholder="Editora" required>
-                    <input class="caixa" type="text" name="data-pub" placeholder="Ano de publicação" required>
-                    <input class="caixa" type="text" name="isbn" placeholder="ISBN" required>
-                    <input class="caixa" type="text" name="tags" placeholder="Tags (separe por vírgulas)" required>
-                    <select class="caixa" name="tipo" required>
-                        <option value="" disabled selected>Tipo  do livro</option>
-                        <option value="didatico">Didático</option>
-                        <option value="paradidatico">Paradidático</option>
-                        <option value="romance">Romance</option>
-                    </select>
-                    <input class="caixa" type="text" name="genero" placeholder="Gênero">
+                    <div class="campo">
+                        <label class="label" for="titulo">Título</label>
+                        <input id="titulo" class="caixa" onload="ativar(this);" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="titulo" required autofocus>
+                    </div>
+                    <div class="campo">
+                        <label class="label" for="subtitulo">Subtítulo</label>
+                        <input class="caixa" onfocus="ativar(this);" onblur="desativar(this);" id="subtitulo" type="text" name="subtitulo" >
+                    </div>
+                    <div class="campo">
+                        <label class="label" for="autor">Autor</label>
+                        <input id="autor" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="autor" required>
+                    </div>
+                    <div class="campo metade">
+                        <label class="label" for="editora">Editora</label>
+                        <input id="editora" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="editora" required>
+                    </div>
+                    <div class="campo metade">
+                        <label class="label" for="ano">Ano de Publicação</label>
+                        <input id="ano" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="ano" required>
+                    </div>
+                    <div style="clear:both"/>
+                    <div class="campo metade">
+                        <label class="label" for="isbn">ISBN</label>
+                        <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
+                    </div>
+                    <div class="campo metade">
+                        <label class="label" for="tags">Tags</label>
+                        <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" required>
+                    </div>
+                    <div style="clear:both"/>
+                    <div class="campo metade">
+                        <label class="label">Tipo  do livro</label>
+                        <input type="radio" name="tipo" value="didatico" id="didatico" checked><label for="didatico">Didático</label></input>
+                        <input type="radio" name="tipo" value="paradidatico" id="paradidatico"><label for="paradidatico">Paradidático</label></input>
+                        <input type="radio" name="tipo" value="romance" id="romance"><label for="romance">Romance</label></input>
+                    </div>
+                    <div class="campo ultimo metade" id="campo-genero">
+                        <label class="label" for="genero">Gênero</label>
+                        <input id="genero" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="genero" >
+                    </div>
+                    <div style="clear:both"/>
                     <div id="caixa-botão">
                         <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
                         <input id="direito" class="botão" type="submit" value="Cadastrar">
+                        <div style="clear:both"/>
                     </div>
-                    <div style="clear:both"/>
                 </form>
             </section>
         </div>
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="/js/menu.js"></script>
         <script type="text/javascript" src="/js/verificaTipo.js"></script>
+        <script type="text/javascript" src="/js/form.js"></script>
     </body>
 </html>

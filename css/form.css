@@ -7,31 +7,64 @@
     padding:40px 0
 }
 #form{
-    width:80%;
+    width:70%;
     margin:0 auto;
     padding:0
 }
+input{border: none;}
 .caixa.invertida{
     background: #00A6FF;
     border:1px solid #fff;
     color: #fff;
 }
+.campo{
+    background: white;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-top:none;
+    padding:10px 10px 0;
+}
+.campo:first-child{
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid rgba(0,0,0,0.09);
+}
+.campo.ultimo{
+    border-radius: 0 0 5px 5px;
+}
+.campo.metade{
+    width: calc(49.78% - 20px);
+    margin: auto 0;
+    display: inline;
+}
+.campo.metade:nth-child(even){
+    border-left-width: 0;
+    float: right
+}
+.campo.metade:nth-child(odd){
+    float: left
+}
+    
+.campo .label{
+    font-size:80%;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+    color: #666;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;  
+    user-select: none
+}
 .caixa{
-    width:80%;
+    width:calc(100% - 20px);
     display:block;
-    border:1px solid #999;
     background:transparent;
-    padding:4px 0;
-    border-radius:5px;
-    box-shadow:0 0 0px 0 #fff;
-    margin:5px auto
+    padding:5px 5px 0;
+    text-align: left
 }
 .caixa.invertida:hover{
     box-shadow:0 0 10px 0 #fff;
     border:1px solid #fff;
-}
-.caixa:hover{
-    box-shadow:inset 0 0 1px 0px;
 }
 .caixa.invertida::-webkit-input-placeholder {
    color: #fff;

@@ -8,6 +8,11 @@
     transition:all 0.3s ease-in;
     margin:0
 }
+input, *:focus {
+    outline-style:none !important;
+    box-shadow:none !important;
+    border-width:0 !important;
+}
 html,body{
     height:100%
 }

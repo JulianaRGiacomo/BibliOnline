@@ -1,13 +1,16 @@
 function verificaTipo() {
-    x =  document.querySelector('[name="tipo"]').value;
-    y = document.querySelector('[name="genero"]');
-    if(x == "romance"){
-            y.style.opacity = 1;
-            y.style.display = "block";
+    var x = document.getElementById("romance");
+    var y = document.getElementById("genero");
+    var z = document.getElementById("campo-genero");
+    if(x.checked == true){
+        y.disabled = false;
+        z.style.backgroundColor = "#fff";
+        z.style.opacity = 1;
     }
     else{
-            y.style.opacity = 0;
-            y.style.display = "none";
+        y.disabled = true;
+        z.style.backgroundColor = "#f1f1f1";
+        z.style.opacity = 0.6;
     }
 }
 setInterval(verificaTipo, 500);
