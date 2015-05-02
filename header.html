@@ -1,0 +1,21 @@
+<div id="tudo" style="visibility:hidden;" onclick="menu();"></div>
+<div id="caixa-menu"  style="left:-250px;">
+    <ul>
+        <li><a href="../index.php">Ricardo Rubens</a></li>
+        <li class="item"><a href="#conf">Configurações</a></li>
+        <li class="item"><a href="#sobre">Sobre</a></li>
+        <li class="item"><a href="../index.php">Sair</a></li>
+    </ul>
+</div>
+<header>
+    <span id="menu">
+        <a href="javascript:void(0)" onclick="menu();"><i class="fa fa-bars"></i></a>
+    </span>
+    <span id="logo"><a href="home.php">BibliOnline</a></span>
+    <span id="busca">
+        <form method="get" action="busca.php">
+            <input id="caixa-busca" name="q" type="search" placeholder="Busque livros e autores" required>
+            <button type="submit" id="lupa" style="border:none;"><i class="fa fa-search  fa-flip-horizontal"></i></button>
+        </form>
+    </span>
+</header>

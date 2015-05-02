@@ -1,0 +1,70 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+#aviso{
+    margin:50px auto 0px;
+    max-width:500px;
+    width:500px;
+    border-radius:5px;
+    vertical-align:middle;
+    color:#D8000C;
+    background-color:#FFBABA;
+    padding:15px 0;
+    font-weight:700;
+    font-size:110%;
+    position:absolute;
+    left:calc(50% - 250px);
+    font-family:"Roboto Condensed", sans-serif
+}
+#aviso i{
+    color:#D8000C;
+}
+nav{
+    padding-top:100px;
+    max-width:1300px;
+    margin:0 auto
+ }
+ul#açoes{
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:100%
+}
+ul#açoes li.item .fa,
+ul#açoes a:visited,
+ul#açoes a{
+    color:#333
+}
+ul#açoes a:hover,
+ul#açoes li.item:hover .fa{
+    color:#00A6FF
+}
+ul#açoes li.item{
+    display:inline-block;
+    background:transparent;
+    border-radius:3px;
+    margin:15px 5%;
+    padding:0;
+    width:160px
+}
+ul#açoes li.item .fa{
+    font-size:150px;
+    padding:5px
+}
+ul#açoes li.item .fa-lock{
+    font-size:180px
+}
+@media all and (max-width:550px){
+    #aviso{
+        font-size:100%;
+        position:relative;
+        margin:80px auto 0;
+        left:initial;
+        width:80%
+    }
+    #aviso i{
+        float:left;
+        margin-left:10px;
+        font-size:50px
+    }
+}

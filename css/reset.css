@@ -1,0 +1,69 @@
+* { /*CSS Reset*/
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:1em;
+    font-style:normal;
+    font-weight:400;
+    color:#333;
+    text-align:center;
+    transition:all 0.3s ease-in;
+    margin:0
+}
+html,body{
+    height:100%
+}
+body{
+    background:#fcfcfc;
+    margin:0;
+    padding:0
+}
+a, a:hover, a:active, a:focus, input::-moz-focus-inner { /*Corrigir outline no Firefox*/
+    border:0 !important;
+    outline:0 !important;
+    -moz-outline-style:none !important
+}
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration:none;
+    color:#00A6FF
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:"Comfortaa", sans-serif;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default
+}
+h1{
+    line-height:2.3em;
+    font-size:2.5em
+}
+h2{
+    line-height: 2em;
+    font-size:2.2em
+}
+h3{
+    font-size:1.3em;
+    line-height:2em
+}
+#conteudo{
+    min-height:100%;
+    margin-bottom:-40px
+}
+#conteudo:after{
+    content:"";
+    display:block;
+    height:40px
+}
+@media all and (max-width:400px){
+    #conteudo{
+        margin-bottom:-60px
+    }
+    #conteudo:after{
+        height:60px
+    }
+}

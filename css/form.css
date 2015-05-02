@@ -1,0 +1,144 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+#main{
+    max-width:1300px;
+    margin:auto;
+    padding:40px 0
+}
+#form{
+    width:80%;
+    margin:0 auto;
+    padding:0
+}
+.caixa.invertida{
+    background: #00A6FF;
+    border:1px solid #fff;
+    color: #fff;
+}
+.caixa{
+    width:80%;
+    display:block;
+    border:1px solid #999;
+    background:transparent;
+    padding:4px 0;
+    border-radius:5px;
+    box-shadow:0 0 0px 0 #fff;
+    margin:5px auto
+}
+.caixa.invertida:hover{
+    box-shadow:0 0 10px 0 #fff;
+    border:1px solid #fff;
+}
+.caixa:hover{
+    box-shadow:inset 0 0 1px 0px;
+}
+.caixa.invertida::-webkit-input-placeholder {
+   color: #fff;
+    opacity: 0.7
+}
+.caixa.invertida:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+}
+.caixa.invertida::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+}
+.caixa.invertida:-ms-input-placeholder {  
+   color: #fff; 
+    opacity: 0.7
+}
+.caixa.invertida:focus{
+    box-shadow:0 0 10px 0 #fff;
+    border:1px solid #fff;
+}
+.caixa:focus{
+    box-shadow:0 0 1px 0 #00A6FF;
+    border:1px solid #00A6FF;
+}
+.caixa:disabled{
+    background:#f1f1f1;
+}
+.caixa.metade{
+    display:inline;
+    width:39.7%;
+}
+fieldset .caixa{
+    width:91.6%
+}
+.caixa.terco{
+    display:inline;
+    width:30%;
+}
+.caixa option:disabled{
+    color:#999
+}
+fieldset{
+    border:1px solid #999;
+    border-radius:5px;
+    width:78%;
+    margin:0 auto;
+}
+legend{
+    font-family:"Comfortaa", sans-serif;
+    font-size:1em;
+    color:#999;
+    text-align:left
+}
+#caixa-botão{
+    width:80%;
+    margin:50px auto 0
+}
+.botão{
+    border-radius:3px;
+    padding:10px 15px;
+    border:0;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+    box-shadow:0 5px 0 #0083CC;
+    transition:all 0.1s linear;
+    background:#00A6FF;
+    margin:0
+}
+.botão.invertido{
+    color: #fff;
+    background: #00A6FF;
+    border-radius: 5px;
+    border: 1px solid #fff !important;
+    box-shadow:none;
+}
+.botão i{
+    color:#fff;
+    font-size:1.4em
+}
+.botão:active{
+    box-shadow:0 2px 0 #0083CC;
+    background:#0094e5;
+    transform:translateY(3px)
+}
+.botão.invertido:hover{
+    box-shadow:0 0 10px 0px #fff;
+}
+.botão.invertido:active{
+    box-shadow:0 0 15px 3px #fff;
+}
+#esquerdo{
+    float:left
+}
+#direito{
+    float:right
+}
+@media all and (max-width:550px) {
+    fieldset{
+        width:95%
+    }
+    #main{
+        padding-top:70px
+    }
+    h1{
+        font-size:2em
+    }
+    fieldset .caixa.terco, fieldset .caixa, .caixa.metade,.caixa, #caixa-botão{
+        width:100%
+    }
+}

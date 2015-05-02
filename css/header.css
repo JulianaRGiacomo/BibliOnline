@@ -1,0 +1,149 @@
+#tudo{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    background-color:rgba(0,0,0,0.099);
+    width:100%;
+    transition:visibility 1s ease-in, opacity 0.5 ease-in;
+    z-index:1
+}
+header{
+    box-shadow:1px 0px 3px rgba(0, 0, 0, 0.3);
+    background-color:#00A6FF;
+    position:absolute;
+    width:100%;
+    left:0;
+    right:0;
+    top:0;
+    padding:5px 0;
+    margin:0
+}
+header a:link,
+header a:visited,
+header a:hover,
+header a:active{
+    color:#fff
+}
+header span{
+    display:inline-block
+}
+#logo{
+    position:absolute;
+    left:45px;
+    font-size:1.5em;
+    line-height:1
+}
+#busca{
+    position:relative;
+    width:50%;
+    max-width:500px
+}
+#caixa-busca,
+#caixa-busca:focus,
+#caixa-busca:active,
+#lupa:focus{
+    border:none;
+    outline:0
+}
+#caixa-busca, #lupa{
+    background:#fff;
+    height:100%;
+    margin:0;
+    padding:3px
+}
+#caixa-busca{
+    width:90%;
+    margin-left:-9%;
+    border-radius:5px 0 0 5px
+}
+#lupa{
+    width:9%;
+    padding-right:5px;
+    position:absolute;
+    font-size:20px;
+    border-radius:0px 5px 5px 0;
+    cursor:pointer
+}
+#lupa i{
+    line-height:75%;
+    top:5px;
+    position:absolute;
+    right:10px;
+    color:#666
+}
+#menu{
+    position:absolute;
+    left:10px;
+    font-size:1.5em;
+    line-height:1
+}
+#menu .fa-bars{
+    color:#fff
+}
+#caixa-menu{
+    width:250px;
+    height:100%;
+    position:absolute;
+    top:0;
+    background-color:#fff;
+    z-index:2
+}
+.aberto{
+    box-shadow:0px 2px 5px 1px rgba(0, 0, 0, 0.18), 0px 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+.fechado{
+    box-shadow:none;
+}
+#caixa-menu ul{
+    list-style:none;
+    padding:0;
+    margin-top:30px;
+    width:100%
+}
+#caixa-menu ul li:first-child{
+    margin-bottom:30px;
+}
+#caixa-menu ul li:first-child a{
+    font-size:1.9em;
+    color:#333;
+    font-family:"Roboto Condensed", sans-serif;
+    font-weight:300;
+}
+#caixa-menu ul li.item{
+    margin:0;
+    text-align:left;
+    font-size:1em;
+    line-height:45px;
+    height:45px;
+}
+#caixa-menu ul li.item:hover{
+    background:rgba(0,0,0,0.05);
+}
+#caixa-menu ul li.item a{
+    width:220px;
+    margin:0 30px;
+    color:#666;
+    display:block;
+    font-family:"Roboto Condensed", sans-serif;
+    font-weight:700;
+    text-align:left
+}
+@media all and (max-width:750px) and (min-width:550px) {
+    #busca{
+        left:50px;
+    }
+}
+@media all and (max-width:550px) {
+    header{
+        height:60px
+    }
+    #busca{
+        width:100%;
+        top:35px
+    }
+    #caixa-busca{
+        width:80%;
+        margin-left:-9%
+    }
+}

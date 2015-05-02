@@ -1,0 +1,45 @@
+table{
+    width:80%;
+    margin:0 auto;
+    border:1px solid #00A6FF;
+    border-radius:5px;
+    border-collapse:separate;
+    border-spacing:0
+}
+caption{
+    font-family:"Comfortaa", sans-serif;
+    font-size:1.2em;
+    text-align:center;
+    margin:20px auto 10px
+}
+th{
+    color:#fff;
+    background:#00A6FF;
+    padding:10px 5px;
+    font-weight:bold
+}
+td{
+    padding:7px;
+    border:1px solid #00A6FF
+}
+tr{
+    background-color:#fcfcfc
+}
+tr:nth-child(odd){
+    background-color:#89BAFF
+}
+tr:nth-child(odd) td{
+    color:#fff
+}
+table.livro th{
+    width:200px;
+}
+table.livro td{
+    background:#fff;
+    color:#333;
+}
+@media all and (max-width:550px){
+    table{
+        width:100%
+    }
+}
