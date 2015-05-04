@@ -30,39 +30,49 @@
                         <label class="label" for="autor">Autor</label>
                         <input id="autor" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="autor" required>
                     </div>
-                    <div class="campo metade">
-                        <label class="label" for="editora">Editora</label>
-                        <input id="editora" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="editora" required>
+                    <div class="metade">
+                        <div class="campo _1-2">
+                            <label class="label" for="editora">Editora</label>
+                            <input id="editora" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="editora" required>
+                        </div>
+                        <div class="campo _2-3">
+                            <label class="label" for="ano">Ano de Publicação</label>
+                            <input id="ano" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="ano" required>
+                        </div>
+                        <div class="campo _3-3">
+                            <label class="label" for="quantidade">Quantidade</label>
+                            <input id="quantidade" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="number" name="quantidade" pattern="[0-9]+$" required>
+                        </div>
+                        <div style="clear:both"></div>
                     </div>
-                    <div class="campo metade">
-                        <label class="label" for="ano">Ano de Publicação</label>
-                        <input id="ano" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="ano" required>
+                    <div class="metade">
+                        <div class="campo _1-2">
+                            <label class="label" for="isbn">ISBN</label>
+                            <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
+                        </div>
+                        <div class="campo _2-2">
+                            <label class="label" for="tags">Tags</label>
+                            <input id="tags" class="caixa" onfocus="ativar(this);" placeholder="Separe por vírgulas" onblur="desativar(this);" type="text" name="tags" required>
+                        </div>
+                        <div style="clear:both"></div>
                     </div>
-                    <div style="clear:both"/>
-                    <div class="campo metade">
-                        <label class="label" for="isbn">ISBN</label>
-                        <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
+                    <div class="metade">
+                        <div class="campo _1-2 ultimo">
+                            <label class="label">Tipo  do livro</label>
+                            <input type="radio" name="tipo" value="didatico" id="didatico" checked><label for="didatico">Didático</label></input>
+                            <input type="radio" name="tipo" value="paradidatico" id="paradidatico"><label for="paradidatico">Paradidático</label></input>
+                            <input type="radio" name="tipo" value="romance" id="romance"><label for="romance">Romance</label></input>
+                        </div>
+                        <div id="campo-genero" class="campo _2-2 ultimo">
+                            <label class="label" for="genero">Gênero</label>
+                            <input id="genero" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="genero" >
+                        </div>
+                        <div style="clear:both"></div>
                     </div>
-                    <div class="campo metade">
-                        <label class="label" for="tags">Tags</label>
-                        <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" required>
-                    </div>
-                    <div style="clear:both"/>
-                    <div class="campo metade">
-                        <label class="label">Tipo  do livro</label>
-                        <input type="radio" name="tipo" value="didatico" id="didatico" checked><label for="didatico">Didático</label></input>
-                        <input type="radio" name="tipo" value="paradidatico" id="paradidatico"><label for="paradidatico">Paradidático</label></input>
-                        <input type="radio" name="tipo" value="romance" id="romance"><label for="romance">Romance</label></input>
-                    </div>
-                    <div class="campo ultimo metade" id="campo-genero">
-                        <label class="label" for="genero">Gênero</label>
-                        <input id="genero" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="genero" >
-                    </div>
-                    <div style="clear:both"/>
                     <div id="caixa-botão">
                         <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
                         <input id="direito" class="botão" type="submit" value="Cadastrar">
-                        <div style="clear:both"/>
+                        <div style="clear:both"></div>
                     </div>
                 </form>
             </section>

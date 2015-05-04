@@ -18,20 +18,67 @@
             <section id="main">
                 <h1>Cadastrar Usuário</h1>
                 <form id="form" method="post" action="home.php">
-                    <input type="text" name="nome" class="caixa" placeholder="Nome Completo" required autofocus>
-                    <input type="text" name="cpf" class="caixa metade" placeholder="CPF" onkeypress="javascript:mascara(this, cpf_mask);"  maxlength="14"  required>
-                    <input type="text" name="rg" class="caixa metade" placeholder="RG" required>
+                    <div class="campo">
+                        <label class="label" for="nome">Nome</label>
+                        <input id="nome" onload="ativar(this);" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="nome" class="caixa" required autofocus>
+                    </div>
+                    <div class="campo">
+                        <label class="label" for="tipo">Tipo</label>
+                        <input id="funcionario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" name="funcionario" required><label for="funcionario">Funcionário</label>
+                        <input id="usuario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" name="funcionario" required><label for="usuario">Usuário</label>
+                    </div>
+                    <div class="metade">
+                        <div class="campo _1-2">
+                            <label class="label" for="cpf">CPF</label>
+                            <input id="cpf" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="cpf" class="caixa" onkeypress="javascript:mascara(this, cpf_mask);"  maxlength="14"  required>
+                        </div>
+                        <div class="campo _2-2">
+                            <label class="label" for="rg">RG</label>
+                            <input id="rg" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="rg" class="caixa" required>
+                        </div>
+                    </div>
                     <fieldset>
                         <legend>Endereço</legend>
-                        <input type="text" name="rua" class="caixa" placeholder="Rua" required>
-                        <input type="text" name="bairro" class="caixa" placeholder="Bairro" required>
-                        <input type="text" name="numero" class="caixa terco" placeholder="Número" required>
-                        <input type="text" name="complemento" class="caixa terco" placeholder="Complemento" required>
-                        <input type="cep" name="cep" class="caixa terco" placeholder="CEP" required>
+                        <div class="metade">
+                            <div class="campo _1-2">
+                                <label class="label" for="rua">Rua</label>
+                                <input id="rua" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="rua" class="caixa" required>
+                            </div>
+                            <div class="campo _2-2">
+                                <label class="label" for="bairro">Bairro</label>
+                                <input id="bairro" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="bairro" class="caixa" required>
+                            </div>
+                        </div>
+                        <div class="campo _1-3">
+                            <label class="label" for="numero">Número</label>
+                            <input id="numero" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="numero" class="caixa" placeholder="Número" required>
+                        </div>
+                        <div class="campo _2-3">
+                            <label class="label" for="complemento">Complemento</label>
+                            <input id="complemento" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="complemento" class="caixa" required>
+                        </div>
+                        <div class="campo _3-3">
+                            <label class="label" for="cep">CEP</label>
+                            <input id="cep" onfocus="ativar(this);" onblur="desativar(this);" type="cep" name="cep" class="caixa terco" required>
+                        </div>
                     </fieldset>
-                    <input type="email" name="email" class="caixa" placeholder="Email" required>
-                    <input type="text" name="telefone" class="caixa metade" placeholder="Telefone">
-                    <input type="text" name="celular" class="caixa metade" placeholder="Celular" required>
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <div class="campo">
+                            <label class="label" for="email">E-mail</label>
+                            <input id="email" onfocus="ativar(this);" onblur="desativar(this);" type="email" name="email" class="caixa" required>
+                        </div>
+                        <div class="metade">
+                            <div class="campo _1-2">
+                                <label class="label" for="telefone">Telefone</label>
+                                <input id="telefone" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="telefone" class="caixa">
+                            </div>
+                            <div class="campo _2-2">
+                                <label class="label" for="celular">Celular</label>
+                                <input id="celular" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="celular" class="caixa" required>
+                            </div>
+                        </div>
+                    </fieldset>
                     <div id="caixa-botão">
                         <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
                         <input id="direito" class="botão" type="submit" value="Cadastrar">
@@ -43,5 +90,6 @@
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="/js/menu.js"></script>
         <script type="text/javascript" src="/js/formatarCPF.js"></script>
+        <script type="text/javascript" src="/js/form.js"></script>
     </body>
 </html>

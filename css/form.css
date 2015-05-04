@@ -12,42 +12,64 @@
     padding:0
 }
 input{border: none;}
-.caixa.invertida{
-    background: #00A6FF;
-    border:1px solid #fff;
-    color: #fff;
-}
 .campo{
     background: white;
-    border: 1px solid rgba(0,0,0,0.09);
+    border: 1px solid rgba(0,0,0,0.3);
     border-top:none;
-    padding:10px 10px 0;
+    padding:0;
+    height: 64px
 }
 .campo:first-child{
     border-radius: 5px 5px 0 0;
-    border-top: 1px solid rgba(0,0,0,0.09);
+    border: 1px solid rgba(0,0,0,0.3);
 }
 .campo.ultimo{
     border-radius: 0 0 5px 5px;
 }
-.campo.metade{
-    width: calc(49.78% - 20px);
-    margin: auto 0;
-    display: inline;
+.metade{
+    width: 100%;
+    margin:0;
+    padding:0;
 }
-.campo.metade:nth-child(even){
-    border-left-width: 0;
-    float: right
+.metade .campo{
+    width: calc(50% - 2px);
+    display:inline-block;
 }
-.campo.metade:nth-child(odd){
+.metade .campo:first-child{
+    border-radius:0;
+    border-top: none;
+}
+.campo._1-2,
+.campo._1-3,
+.campo._2-3{
+    border-right-color: rgba(0,0,0,0.02);
     float: left
 }
-    
+.campo._2-2,
+.campo._3-3{
+    float: right
+}
+.campo._1-2.ultimo{
+    border-radius: 0 0 0 5px;
+}
+.campo._2-2.ultimo{
+    border-radius: 0 0 5px 0;
+}
+
+.campo._1-3,
+.campo._2-3,
+.campo._3-3{
+    width: calc(33% + 1px);
+}
+.metade .campo._1-3,
+.metade .campo._2-3,
+.metade .campo._3-3{
+    width: calc(25% - 2px);
+}
 .campo .label{
     font-size:80%;
-    font-weight: bold;
     display: block;
-    padding: 5px;
+    padding: 10px 5px 5px 15px;
     color: #666;
     text-align: left;
     text-transform: uppercase;
@@ -55,12 +77,24 @@ input{border: none;}
     -moz-user-select: none;  
     user-select: none
 }
+input[type="radio"] ~ label{
+    font-size: 100%;
+    padding: 5px 5px 20px;
+}
 .caixa{
-    width:calc(100% - 20px);
+    width: calc(100% - 15px);
     display:block;
     background:transparent;
-    padding:5px 5px 0;
+    padding: 0 0 9px;
+    margin: 0;
+    border-left: 15px solid transparent !important;
+    font-size: 110%;
     text-align: left
+}
+.caixa.invertida{
+    background: #00A6FF;
+    border:1px solid #fff;
+    color: #fff;
 }
 .caixa.invertida:hover{
     box-shadow:0 0 10px 0 #fff;
@@ -84,19 +118,12 @@ input{border: none;}
     box-shadow:0 0 10px 0 #fff;
     border:1px solid #fff;
 }
-.caixa:focus{
-    box-shadow:0 0 1px 0 #00A6FF;
-    border:1px solid #00A6FF;
-}
 .caixa:disabled{
     background:#f1f1f1;
 }
 .caixa.metade{
     display:inline;
     width:39.7%;
-}
-fieldset .caixa{
-    width:91.6%
 }
 .caixa.terco{
     display:inline;
@@ -106,16 +133,22 @@ fieldset .caixa{
     color:#999
 }
 fieldset{
-    border:1px solid #999;
-    border-radius:5px;
-    width:78%;
-    margin:0 auto;
+    width:100%;
+    padding:0 !important;
+    border: none;
+    margin:0;
+    background: #fff
 }
 legend{
-    font-family:"Comfortaa", sans-serif;
+    font-family:"Roboto Condensed", sans-serif;
+    text-transform: uppercase;
     font-size:1em;
-    color:#999;
-    text-align:left
+    color:#666;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+    width: calc(100% - 2px);
+    background: #fff;
+    padding: 5px 0 0;
 }
 #caixa-botão{
     width:80%;
@@ -173,5 +206,12 @@ legend{
     }
     fieldset .caixa.terco, fieldset .caixa, .caixa.metade,.caixa, #caixa-botão{
         width:100%
+    }
+    .campo{
+        border: 1px solid rgba(0,0,0,0.3) !important;
+        width: 100% !important
+    }
+    .caixa{
+        border-left-width: 0;
     }
 }
