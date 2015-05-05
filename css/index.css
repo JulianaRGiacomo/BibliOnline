@@ -21,6 +21,7 @@
     top:5vh;
     right: 3vw
 }
+#logo:hover,
 #logo{
     margin-top: 5%;
     font-family: "Comfortaa", sans-serif;
@@ -28,6 +29,13 @@
     font-size: 30vw;
     letter-spacing: -0.18em;
     color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
 }
 #info{
     max-width: 50%;
