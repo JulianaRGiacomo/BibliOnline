@@ -24,8 +24,8 @@
                     </div>
                     <div class="campo _1-1-3 primeiro">
                         <label class="label" for="tipo">Tipo</label>
-                        <input id="funcionario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" name="funcionario" required><label for="funcionario">Funcionário</label>
-                        <input id="usuario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" name="funcionario" required><label for="usuario">Usuário</label>
+                        <input id="funcionario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" value="f" name="tipo" required><label for="funcionario">Funcionário</label>
+                        <input id="usuario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" value="c" name="tipo" required><label for="usuario">Usuário</label>
                     </div>
                     <div class="metade">
                         <div class="campo _1-2">
