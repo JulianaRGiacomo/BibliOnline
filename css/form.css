@@ -49,13 +49,30 @@ input{border: none;}
 .campo._3-3{
     float: right
 }
+.campo._1-2-3.primeiro{
+    border-radius: 5px 0 0 0;
+}
+.campo._1-1-3.primeiro{
+    border-radius: 0 5px 0 0;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+._1-2-3{
+    float: left;
+    width: calc(75% - 2px);
+    border-right: 1px solid rgba(0,0,0,0.02) !important;
+    display:inline-block;
+}
+._1-1-3{
+    float: right;
+    width: calc(25% - 2px);
+    display:inline-block;
+}
 .campo._1-2.ultimo{
     border-radius: 0 0 0 5px;
 }
 .campo._2-2.ultimo{
     border-radius: 0 0 5px 0;
 }
-
 .campo._1-3,
 .campo._2-3,
 .campo._3-3{
@@ -83,51 +100,17 @@ input[type="radio"] ~ label{
 }
 .caixa{
     width: calc(100% - 15px);
+    height: 35px;
     display:block;
     background:transparent;
-    padding: 0 0 9px;
+    padding: 0;
     margin: 0;
     border-left: 15px solid transparent !important;
     font-size: 110%;
     text-align: left
 }
-.caixa.invertida{
-    background: #00A6FF;
-    border:1px solid #fff;
-    color: #fff;
-}
-.caixa.invertida:hover{
-    box-shadow:0 0 10px 0 #fff;
-    border:1px solid #fff;
-}
-.caixa.invertida::-webkit-input-placeholder {
-   color: #fff;
-    opacity: 0.7
-}
-.caixa.invertida:-moz-placeholder { /* Firefox 18- */
-   color: #fff;
-}
-.caixa.invertida::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;
-}
-.caixa.invertida:-ms-input-placeholder {  
-   color: #fff; 
-    opacity: 0.7
-}
-.caixa.invertida:focus{
-    box-shadow:0 0 10px 0 #fff;
-    border:1px solid #fff;
-}
 .caixa:disabled{
     background:#f1f1f1;
-}
-.caixa.metade{
-    display:inline;
-    width:39.7%;
-}
-.caixa.terco{
-    display:inline;
-    width:30%;
 }
 .caixa option:disabled{
     color:#999
@@ -166,13 +149,6 @@ legend{
     background:#00A6FF;
     margin:0
 }
-.botão.invertido{
-    color: #fff;
-    background: #00A6FF;
-    border-radius: 5px;
-    border: 1px solid #fff !important;
-    box-shadow:none;
-}
 .botão i{
     color:#fff;
     font-size:1.4em
@@ -181,12 +157,6 @@ legend{
     box-shadow:0 2px 0 #0083CC;
     background:#0094e5;
     transform:translateY(3px)
-}
-.botão.invertido:hover{
-    box-shadow:0 0 10px 0px #fff;
-}
-.botão.invertido:active{
-    box-shadow:0 0 15px 3px #fff;
 }
 #esquerdo{
     float:left

@@ -18,11 +18,11 @@
             <section id="main">
                 <h1>Cadastrar Usuário</h1>
                 <form id="form" method="post" action="home.php">
-                    <div class="campo">
+                    <div class="campo _1-2-3 primeiro">
                         <label class="label" for="nome">Nome</label>
                         <input id="nome" onload="ativar(this);" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="nome" class="caixa" required autofocus>
                     </div>
-                    <div class="campo">
+                    <div class="campo _1-1-3 primeiro">
                         <label class="label" for="tipo">Tipo</label>
                         <input id="funcionario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" name="funcionario" required><label for="funcionario">Funcionário</label>
                         <input id="usuario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" name="funcionario" required><label for="usuario">Usuário</label>
@@ -36,6 +36,7 @@
                             <label class="label" for="rg">RG</label>
                             <input id="rg" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="rg" class="caixa" required>
                         </div>
+                        <div style="clear:both"></div>
                     </div>
                     <fieldset>
                         <legend>Endereço</legend>
@@ -51,7 +52,7 @@
                         </div>
                         <div class="campo _1-3">
                             <label class="label" for="numero">Número</label>
-                            <input id="numero" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="numero" class="caixa" placeholder="Número" required>
+                            <input id="numero" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="numero" class="caixa" required>
                         </div>
                         <div class="campo _2-3">
                             <label class="label" for="complemento">Complemento</label>
@@ -59,7 +60,7 @@
                         </div>
                         <div class="campo _3-3">
                             <label class="label" for="cep">CEP</label>
-                            <input id="cep" onfocus="ativar(this);" onblur="desativar(this);" type="cep" name="cep" class="caixa terco" required>
+                            <input id="cep" onfocus="ativar(this);" onblur="desativar(this);" type="cep" name="cep" class="caixa" required>
                         </div>
                     </fieldset>
                     <fieldset>
