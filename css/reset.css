@@ -21,8 +21,8 @@ body{
     margin:0;
     padding:0
 }
-a, a:hover, a:active, a:focus, input::-moz-focus-inner { /*Corrigir outline no Firefox*/
-    border:0 !important;
+a, a:hover, a:active, a:focus, input::-moz-focus-inner,
+button, button:hover, button:active, button:focus, button::-moz-focus-inner{ /*Corrigir outline no Firefox*/
     outline:0 !important;
     -moz-outline-style:none !important
 }

@@ -1,8 +1,8 @@
 table{
-    width:80%;
+    width:100%;
     margin:0 auto;
     border:1px solid #00A6FF;
-    border-radius:5px;
+    border-radius:2px;
     border-collapse:separate;
     border-spacing:0
 }
@@ -20,16 +20,16 @@ th{
 }
 td{
     padding:7px;
-    border:1px solid #00A6FF
+    border:1px solid rgba(0,0,0,0.3)
 }
 tr{
     background-color:#fcfcfc
 }
 tr:nth-child(odd){
-    background-color:#89BAFF
+    background-color:#F4FBFF
 }
-tr:nth-child(odd) td{
-    color:#fff
+tr:nth-child(even){
+    background: #fff
 }
 table.livro th{
     width:200px;

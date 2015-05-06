@@ -19,10 +19,21 @@
             <section id="main">
                 <h1>Registrar Devolução</h1>
                 <form id="form" method="post" action="home.php">
-                    <input type="text" name="nome" class="caixa" placeholder="Nome Completo do Usuário" required disabled>
-                    <input type="text" name="cpf" class="caixa metade" placeholder="CPF do Usuário" onkeypress="javascript:mascara(this, cpf_mask);"  maxlength="14" autofocus required>
-                    <input type="text" name="rg" class="caixa metade" placeholder="RG do Usuário" disabled required>
-                    
+                    <div class="campo">
+                        <label class="label" for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" class="caixa" disabled>
+                    </div>
+                    <div class="metade">
+                        <div class="campo _1-2 ultimo">
+                            <label class="label" for="cpf">CPF</label>
+                            <input id="cpf" type="text" name="cpf" class="caixa" onkeypress="javascript:mascara(this, cpf_mask);"  onfocus="ativar(this);" onblur="desativar(this);" maxlength="14" autofocus required>
+                        </div>
+                        <div class="campo _2-2 ultimo">
+                            <label class="label" for="rg">RG</label>
+                            <input id="rg" type="text" name="rg" class="caixa" disabled>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
                     <table>
                         <caption>Livros em Empréstimo a Este Usuário</caption>
                         <tr>
@@ -75,8 +86,8 @@
                         </tr>
                     </table>
                     <div id="caixa-botão">
-                        <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
-                        <input id="direito" class="botão" type="submit" value="Salvar">
+                        <a id="esquerdo" class="botão neutro" href="/funcionario/">Cancelar</a>
+                        <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
                     <div style="clear:both"/>
                 </form>
@@ -85,5 +96,6 @@
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="/js/menu.js"></script>
         <script type="text/javascript" src="/js/formatarCPF.js"></script>
+        <script type="text/javascript" src="/js/form.js"></script>
     </body>
 </html>

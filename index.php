@@ -18,7 +18,7 @@
                 <form action="login.php" method="post">
                     <input type="text" class="caixa" name="email" placeholder="E-mail">
                     <input class="caixa" name="senha" placeholder="Senha" type="password">
-                    <input class="botão" onclick="location.href='home.php'" id="ir" type="submit" value="Ir!">
+                    <input class="botão" id="ir" type="submit" value="Ir!">
                 </form>
             </div>
         </div>

@@ -18,19 +18,47 @@
             <section id="main">
                 <h1>Registrar Locação</h1>
                 <form id="form" method="post" action="home.php">
-                    <input type="text" name="nome" class="caixa" placeholder="Nome Completo do Usuário" required disabled>
-                    <input type="text" name="cpf" class="caixa metade" placeholder="CPF do Usuário" onkeypress="javascript:mascara(this, cpf_mask);"  maxlength="14" autofocus required>
-                    <input type="text" name="rg" class="caixa metade" placeholder="RG do Usuário" disabled required>
-                    <input type="email" name="email" class="caixa metade" placeholder="Email do Usuário" disabled required>
-                    <input type="text" name="celular" class="caixa metade" placeholder="Celular do Usuário" disabled>
-                    <input class="caixa" type="text" name="titulo" placeholder="Título do Livro" disabled required>
-                    <input class="caixa" type="text" name="sub" placeholder="Subtítulo do Livro" disabled>
-                    <input class="caixa" type="text" name="autor" placeholder="Autor(es) do Livro" disabled required>
-                    <input class="caixa metade" type="text" name="isbn" placeholder="ISBN do Livro" required>
-                    <input class="caixa metade" type="text" name="editora" placeholder="Editora do Livro" disabled required>
+                    <div class="campo">
+                        <label class="label" for="nome">Nome completo</label>
+                        <input id="nome" type="text" name="nome" class="caixa" required disabled>
+                    </div>
+                    <div class="metade">
+                        <div class="campo _1-2">
+                            <label class="label" for="cpf">CPF</label>
+                            <input type="text" name="cpf" class="caixa" onkeypress="javascript:mascara(this, cpf_mask);" id="cpf" onfocus="ativar(this);" onblur="desativar(this);"  maxlength="14" autofocus required>
+                        </div>
+                        <div class="campo _2-2">
+                            <label class="label" for="rg">RG</label>
+                            <input id="rg" type="text" name="rg" class="caixa" disabled required>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="campo">
+                        <label class="label" for="titulo">Título</label>
+                        <input id="titulo" class="caixa" type="text" name="titulo" disabled required>
+                    </div>
+                    <div class="campo">
+                        <label class="label" for="sub">Subtítulo</label>
+                        <input id="sub" class="caixa" type="text" name="sub" disabled>
+                    </div>
+                    <div class="campo">
+                        <label class="label" for="autor">Autor</label>
+                        <input id="autor" class="caixa" type="text" name="autor" disabled required>
+                    </div>
+                    <div class="metade">
+                        <div class="campo _1-2 ultimo">
+                            <label class="label" for="isbn">ISBN</label>
+                            <input id="isbn" class="caixa" type="text" name="isbn" onfocus="ativar(this);" onblur="desativar(this);" required>
+                        </div>
+                        <div class="campo _2-2 ultimo">
+                            <label class="label" for="editora">Editora</label>
+                            <input id="editora" class="caixa" type="text" name="editora" disabled required>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
                     <div id="caixa-botão">
-                        <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
-                        <input id="direito" class="botão" type="submit" value="Salvar">
+                        <a id="esquerdo" class="botão neutro" href="/funcionario/">Cancelar</a>
+                        <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
                     <div style="clear:both"/>
                 </form>
@@ -39,5 +67,6 @@
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="/js/menu.js"></script>
         <script type="text/javascript" src="/js/formatarCPF.js"></script>
+        <script type="text/javascript" src="/js/form.js"></script>
     </body>
 </html>

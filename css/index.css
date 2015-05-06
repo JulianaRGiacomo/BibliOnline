@@ -18,12 +18,15 @@
     width: 80%;
     max-width: 500px;
     transition: opacity 1s ease-in;
+    z-index: 2;
     top:5vh;
     right: 3vw
 }
 #logo:hover,
 #logo{
-    margin-top: 5%;
+    position: absolute;
+    top: 10vh;
+    left: 8vw;
     font-family: "Comfortaa", sans-serif;
     font-weight: bold;
     font-size: 30vw;
@@ -53,10 +56,8 @@
     color: #fff;
 }
 #caixa-botão{
-    margin:10% 0;
-}
-#caixa-botão .botão{
-    margin: 0 10%;
+    margin:10% auto;
+    max-width: 400px;
 }
 .full{
     background: #fff;
@@ -133,11 +134,9 @@ a.botão:active, input.botão:active{
     border-color: #fcfcfc;
     background: #fcfcfc
 }
-@media all and (max-width:1000px){
-    #cabecalho h1{
-        margin-top: -50px;
-    }
-    #cabecalho p{
-        padding:0;
-    }
+#direito{
+    float: right
+}
+#esquerdo{
+    float: left
 }

@@ -70,19 +70,19 @@
                             <input id="email" onfocus="ativar(this);" onblur="desativar(this);" type="email" name="email" class="caixa" required>
                         </div>
                         <div class="metade">
-                            <div class="campo _1-2">
+                            <div class="campo _1-2 ultimo">
                                 <label class="label" for="telefone">Telefone</label>
                                 <input id="telefone" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="telefone" class="caixa">
                             </div>
-                            <div class="campo _2-2">
+                            <div class="campo _2-2 ultimo">
                                 <label class="label" for="celular">Celular</label>
                                 <input id="celular" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="celular" class="caixa" required>
                             </div>
                         </div>
                     </fieldset>
                     <div id="caixa-botão">
-                        <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
-                        <input id="direito" class="botão" type="submit" value="Cadastrar">
+                        <a id="esquerdo" class="botão neutro" href="index.php">Cancelar</a>
+                        <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
                     <div style="clear:both"/>
                 </form>

@@ -20,7 +20,7 @@
                 <form id="form" method="post" action="home.php">
                     <div class="campo">
                         <label class="label" for="titulo">Título</label>
-                        <input id="titulo" class="caixa" onload="ativar(this);" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="titulo" required autofocus>
+                        <input id="titulo" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="titulo" required autofocus>
                     </div>
                     <div class="campo">
                         <label class="label" for="subtitulo">Subtítulo</label>
@@ -51,8 +51,8 @@
                             <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
                         </div>
                         <div class="campo _2-2">
-                            <label class="label" for="tags">Tags</label>
-                            <input id="tags" class="caixa" onfocus="ativar(this);" placeholder="Separe por vírgulas" onblur="desativar(this);" type="text" name="tags" required>
+                            <label class="label" for="tags">Tags (separe por vírgulas)</label>
+                            <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" required>
                         </div>
                         <div style="clear:both"></div>
                     </div>
@@ -70,10 +70,10 @@
                         <div style="clear:both"></div>
                     </div>
                     <div id="caixa-botão">
-                        <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="location.href='home.php'">
-                        <input id="direito" class="botão" type="submit" value="Cadastrar">
-                        <div style="clear:both"></div>
+                        <a id="esquerdo" class="botão neutro" href="index.php">Cancelar</a>
+                        <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
+                    <div style="clear:both"/>
                 </form>
             </section>
         </div>

@@ -81,6 +81,10 @@
                         <td>4 dias</td>
                     </tr>
                 </table>
+                <div id="caixa-botão">
+                    <a class="botão voltar" href="index.php">Voltar</a>
+                </div>
+                <div style="clear:both"/>
             </section>
         </div>
         <?php include("../footer.html"); ?>

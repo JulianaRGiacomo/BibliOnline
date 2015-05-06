@@ -75,6 +75,10 @@
                         <td>20/04/2015<br>17h03</td>
                     </tr>
                 </table>
+                <div id="caixa-botão">
+                    <a class="botão voltar" href="index.php">Voltar</a>
+                </div>
+                <div style="clear:both"/>
             </section>
         </div>
         <?php include("../footer.html"); ?>

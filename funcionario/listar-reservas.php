@@ -26,8 +26,8 @@
                         <th>Título</th>
                         <th>Autor</th>
                         <th>ISBN</th>
-                        <th>Prazo</th>
-                        <th>Locar</th>
+                        <th>Reservado até</th>
+                        <th></th>
                     </tr>
                     <tr>
                         <td>Alysson Lopes</td>
@@ -36,7 +36,7 @@
                         <td>J. K. Rowling</td>
                         <td>1234567890</td>
                         <td>30/04/2015</td>
-                        <td><button onclick="location.href='registrar-locacao.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Locar</button></td>
                     </tr>
                     <tr>
                         <td>Alysson Lopes</td>
@@ -45,7 +45,7 @@
                         <td>Stephenie Meyer</td>
                         <td>9123456780</td>
                         <td>2/05/2015</td>
-                        <td><button onclick="location.href='registrar-locacao.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Locar</button></td>
                     </tr>
                     <tr>
                         <td>Juliana Giacomo</td>
@@ -54,7 +54,7 @@
                         <td>Markus Zusack</td>
                         <td>3124567890</td>
                         <td>3/05/2015</td>
-                        <td><button onclick="location.href='registrar-locacao.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Locar</button></td>
                     </tr>
                     <tr>
                         <td>Juliana Giacomo</td>
@@ -63,7 +63,7 @@
                         <td>Paulo Coelho</td>
                         <td>7123456890</td>
                         <td>5/05/2015</td>
-                        <td><button onclick="location.href='registrar-locacao.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Locar</button></td>
                     </tr>
                     <tr>
                         <td>João da Silva</td>
@@ -72,9 +72,13 @@
                         <td>Stieg Larsson</td>
                         <td>5123467890</td>
                         <td>5/05/2015</td>
-                        <td><button onclick="location.href='registrar-locacao.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Locar</button></td>
                     </tr>
                 </table>
+                <div id="caixa-botão">
+                    <a class="botão voltar" href="index.php">Voltar</a>
+                </div>
+                <div style="clear:both"/>
             </section>
         </div>
         <?php include("../footer.html"); ?>
