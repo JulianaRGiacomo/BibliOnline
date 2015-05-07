@@ -1,18 +1,17 @@
-#tudo{
-    position:absolute;
-    top:0;
-    right:0;
-    height:100%;
-    background-color:rgba(0,0,0,0.099);
-    width:100%;
-    transition:visibility 1s ease-in, opacity 0.5 ease-in;
-    z-index:1
+@keyframes girar{
+    from{transform: rotate(0deg)}
+    to {transform: rotate(361deg)}
+}
+@keyframes zoom{
+    from{transform: scale(0.9)}
+    to{transform: scale(1.3)}
 }
 header{
-    box-shadow:1px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow:0 0 1px rgba(0, 0, 0, 0.3);
     background-color:#00A6FF;
     position:absolute;
     width:100%;
+    height: 30px;
     left:0;
     right:0;
     top:0;
@@ -28,16 +27,22 @@ header a:active{
 header span{
     display:inline-block
 }
-#logo{
-    position:absolute;
-    left:45px;
+#home{
+    float: left;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+#home a{
     font-size:1.5em;
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: -2px;
     line-height:1
 }
 #busca{
     position:relative;
     width:50%;
-    max-width:500px
+    max-width:500px;
+    margin-top: 3px;
 }
 #caixa-busca,
 #caixa-busca:focus,
@@ -73,77 +78,48 @@ header span{
     color:#666
 }
 #menu{
-    position:absolute;
-    left:10px;
-    font-size:1.5em;
-    line-height:1
+    margin-top: 3px;
+    float: right;
+    margin-right: 15px;
 }
-#menu .fa-bars{
-    color:#fff
+#menu a{
+    letter-spacing: -1px;
+    font-size: 20px;
+}
+#menu a:hover #config{
+    animation: girar 1500ms linear infinite;
+}
+#menu i{
+    color: #fff;
+}
+#usuario{
+    margin: 0 10px;
+}
+#config{
+    margin: 0 5px;
 }
 #caixa-menu{
-    width:250px;
-    height:100%;
-    position:absolute;
-    top:0;
-    background-color:#fff;
-    z-index:2
+    margin-top:40px;
 }
-.aberto{
-    box-shadow:0px 2px 5px 1px rgba(0, 0, 0, 0.18), 0px 2px 10px 1px rgba(0, 0, 0, 0.12);
+#sair:hover i{
+    animation: zoom 500ms linear alternate infinite;
 }
-.fechado{
-    box-shadow:none;
-}
-#caixa-menu ul{
-    list-style:none;
-    padding:0;
-    margin-top:30px;
-    width:100%
-}
-#caixa-menu ul li:first-child{
-    margin-bottom:30px;
-}
-#caixa-menu ul li:first-child a{
-    font-size:1.9em;
-    color:#333;
-    font-family:"Roboto Condensed", sans-serif;
-    font-weight:300;
-}
-#caixa-menu ul li.item{
-    margin:0;
-    text-align:left;
-    font-size:1em;
-    line-height:45px;
-    height:45px;
-}
-#caixa-menu ul li.item:hover{
-    background:rgba(0,0,0,0.05);
-}
-#caixa-menu ul li.item a{
-    width:220px;
-    margin:0 30px;
-    color:#666;
-    display:block;
-    font-family:"Roboto Condensed", sans-serif;
-    font-weight:700;
-    text-align:left
-}
-@media all and (max-width:750px) and (min-width:550px) {
-    #busca{
-        left:50px;
-    }
-}
-@media all and (max-width:550px) {
+@media all and (max-width:750px) {
     header{
-        height:60px
+        padding-top: 10px;
+        height:70px
     }
     #busca{
         width:100%;
-        top:35px
+        top:10px;
     }
     #caixa-busca{
         width:80%;
         margin-left:-9%
+    }
+    #menu{
+        position: absolute;
+        top: 10px;
+        right: 0;
     }
 }
