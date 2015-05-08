@@ -4,18 +4,14 @@
         <meta charset="utf-8">
         <meta lang="pt">
         <title>BibliOnline</title>
-        
-         <!--importando o FontAwesome-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <!--importando css da página-->
         <link rel="stylesheet" href="/css/index.css">
-        <!--importando a fonte Roboto e Comfortaa do Google Fonts-->
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="login" style="visibility:hidden;opacity:0">
             <div id="form">
-                <form action="login.php" method="post">
+                <form action="" method="post">
                     <input type="text" class="caixa" name="email" placeholder="E-mail">
                     <input class="caixa" name="senha" placeholder="Senha" type="password">
                     <input class="botão" id="ir" type="submit" value="Ir!">

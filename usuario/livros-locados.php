@@ -5,12 +5,9 @@
         <meta charset="utf-8">
         <meta lang="pt">
         <title>Livros Comigo - BibliOnline</title>
-        <!--importando o FontAwesome-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <!--importando css da página-->
         <link rel="stylesheet" href="/css/table.css">
         <link rel="stylesheet" href="/css/form.css">
-        <!--importando a fonte Roboto e Comfortaa do Google Fonts-->
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -30,15 +27,19 @@
                         <td>A Menina Que Roubava Livros</td>
                         <td>Markus Zusack</td>
                         <td>3/05/2015</td>
-                        <td><button type="button" class="botão" name="livro"><i class="fa fa-refresh"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Renovar Prazo</button></td>
                     </tr>
                     <tr>
                         <td>O Alquimista</td>
                         <td>Paulo Coelho</td>
                         <td>5/05/2015</td>
-                        <td><button type="button" class="botão" name="livro"><i class="fa fa-refresh"></i></button></td>
+                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Renovar Prazo</button></td>
                     </tr>
                 </table>
+                <div id="caixa-botão">
+                    <a class="botão voltar" href="index.php">Voltar</a>
+                </div>
+                <div style="clear:both"></div>
             </section>
         </div>
         <?php include("../footer.html"); ?>

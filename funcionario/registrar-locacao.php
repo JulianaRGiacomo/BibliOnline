@@ -5,11 +5,8 @@
         <meta charset="utf-8">
         <meta lang="pt">
         <title>Registrar Locação - BibliOnline</title>
-        <!--importando o FontAwesome-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <!--importando css da página-->
         <link rel="stylesheet" href="/css/form.css">
-        <!--importando a fonte Roboto e Comfortaa do Google Fonts-->
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -60,7 +57,7 @@
                         <a id="esquerdo" class="botão neutro" href="/funcionario/">Cancelar</a>
                         <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
-                    <div style="clear:both"/>
+                    <div style="clear:both"></div>
                 </form>
             </section>
         </div>

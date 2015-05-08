@@ -5,12 +5,9 @@
         <meta charset="utf-8">
         <meta lang="pt">
         <title>Toda Poesia - Paulo Leminski - BibliOnline</title>
-        <!--importando o FontAwesome-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <!--importando css da página-->
         <link rel="stylesheet" href="/css/table.css">
         <link rel="stylesheet" href="/css/form.css">
-        <!--importando a fonte Roboto e Comfortaa do Google Fonts-->
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -52,12 +49,13 @@
                     <td>Disponível</td>
                 </tr>
             </table>
-            <form id="form" method="post" action="home.php">
+            <form id="form" method="post" action="index.php">
+                <input type="text" value="9788539522233" name="isbn" hidden="hidden">
                 <div id="caixa-botão">
-                        <input id="esquerdo" class="botão" type="button" value="Cancelar" onclick="home.php">
-                        <input id="direito" class="botão" type="submit" value="Reservar">
+                    <a id="esquerdo" class="botão neutro" href="index.php">Cancelar</a>
+                    <button id="direito" class="botão positivo" type="submit">Reservar</button>
                 </div>
-                <div style="clear:both"/>
+                <div style="clear:both"></div>
             </form>
             </section>
         </div>

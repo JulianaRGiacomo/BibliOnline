@@ -1,16 +1,4 @@
-<!--<div id="tudo" style="visibility:hidden;" onclick="menu();"></div>
-<div id="caixa-menu"  style="left:-250px;">
-    <ul>
-        <li><a href="../index.php">Ricardo Rubens</a></li>
-        <li class="item"><a href="#conf">Configurações</a></li>
-        <li class="item"><a href="#sobre">Sobre</a></li>
-        <li class="item"><a href="../index.php">Sair</a></li>
-    </ul>
-</div>-->
 <header>
-    <!--<span id="menu">
-        <a href="javascript:void(0)" onclick="menu();"><i class="fa fa-bars"></i></a>
-    </span>-->
     <span id="home"><a href="index.php">BibliOnline</a></span>
     <span id="busca">
         <form method="get" action="busca.php">
@@ -19,7 +7,16 @@
         </form>
     </span>
     <div id="menu">
-        <span id="usuario"><a href="#usuario" title="Configurações">Ricardo Rubens<i id="config" class="fa fa-cog"></i></a></span>
-        <span id="sair"><a href="#sair" title="Sair"><i class="fa fa-sign-out"></i></a></span>
+        <span id="config">
+            <a href="#usuario" title="Configurações">
+                <span id="user">Ricardo Rubens</span>
+                <i class="fa fa-cog"></i>
+            </a>
+        </span>
+        <span id="sair">
+            <a href="#sair" title="Sair">
+                <i class="fa fa-sign-out"></i>
+            </a>
+        </span>
     </div>
 </header>

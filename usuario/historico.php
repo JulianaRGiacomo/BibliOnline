@@ -5,12 +5,9 @@
         <meta charset="utf-8">
         <meta lang="pt">
         <title>Meu Histórico - BibliOnline</title>
-        <!--importando o FontAwesome-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <!--importando css da página-->
         <link rel="stylesheet" href="/css/table.css">
         <link rel="stylesheet" href="/css/form.css">
-        <!--importando a fonte Roboto e Comfortaa do Google Fonts-->
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -55,8 +52,12 @@
                             <td>15/02/2015</td>
                             <td>19/02/2015</td>
                         </tr>
-                    </table>
-                </section>
+                </table>
+                <div id="caixa-botão">
+                    <a class="botão voltar" href="index.php">Voltar</a>
+                </div>
+                <div style="clear:both"></div>
+            </section>
         </div>
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="/js/menu.js"></script>

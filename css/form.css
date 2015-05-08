@@ -162,7 +162,7 @@ button.botão:before{
 }
 a.botão:active,
 button.botão:active{
-    transform: translateY(3px);
+    animation: zoom 0.2s
 }
 a.botão:disabled,
 button.botão:disabled,
@@ -174,8 +174,8 @@ button.botão:disabled:hover{
     border: 1px solid #000;
     color: #fff;
     opacity: 0.2;
-    transform: translateY(0);
-    cursor: default;
+    animation: none;
+    cursor: default
 }
 a.positivo,
 button.positivo{
@@ -191,6 +191,9 @@ button.positivo{
 .positivo:before{
     content: "\f00c";
     color: #fff;
+}
+.renovar:before{
+    content: "\f021";
 }
 a.voltar,
 button.voltar,

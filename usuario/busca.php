@@ -5,11 +5,8 @@
         <meta charset="utf-8">
         <meta lang="pt">
         <title>Busca - BibliOnline</title>
-        <!--importando o FontAwesome-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <!--importando css da página-->
         <link rel="stylesheet" href="/css/busca.css">
-        <!--importando a fonte Roboto e Comfortaa do Google Fonts-->
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -39,22 +36,26 @@
                             <td>Harry Potter e A Pedra Filosofal</td>
                             <td>J. K. Rowling</td>
                             <td>Locado</td>
-                            <td>-</td>
+                            <td><button type="button" class="botão positivo" name="livro" title="Reservar" disabled>Reservar</button></td>
                         </tr>
                         <tr>
                             <td>Java - Como programar</td>
                             <td>Paul J. Deitel, Dr Harvey M. Deitel</td>
                             <td>Disponível</td>
-                        <td><button type="button" onclick="location.href='info-livro.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                            <td><button type="button" class="botão positivo" name="livro" title="Reservar">Reservar</button></td>
                         </tr>
                         <tr>
                             <td>Contos Inacabados</td>
                             <td>J. R. R. Tolkien</td>
                             <td>Disponível</td>
-                        <td><button type="button" onclick="location.href='info-livro.php'" class="botão" name="livro"><i class="fa fa-level-up"></i></button></td>
+                            <td><button type="button" class="botão positivo" name="livro" title="Reservar">Reservar</button></td>
                         </tr>
-                    </table>
-                </section>
+                </table>
+                <div id="caixa-botão">
+                    <a class="botão voltar" href="index.php">Voltar</a>
+                </div>
+                <div style="clear:both"></div>
+            </section>
         </div>
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="/js/menu.js"></script>

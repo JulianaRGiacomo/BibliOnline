@@ -9,14 +9,8 @@ function desativar(element){
     x.childNodes[1].style.color = "#666";
 }
 function destacaPrimeiroCampo(){
-    var x = document.getElementsByClassName("caixa");
-    var i;
-    
-    for(i=0;i<x.length;i++){
-        if(x[i].focus == true){
-            ativar(x[i]);
-        }
-    }
+    var x = document.activeElement;
+    ativar(x);
 };
 function verificaDisabled(){
     var x = document.getElementsByClassName("caixa");
