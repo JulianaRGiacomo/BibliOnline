@@ -29,14 +29,14 @@ tr:nth-child(odd){
     background-color:#F4FBFF
 }
 tr:nth-child(even){
-    background: #fff
+    background:#fff
 }
 table.livro th{
-    width:200px;
+    width:200px
 }
 table.livro td{
     background:#fff;
-    color:#333;
+    color:#333
 }
 @media all and (max-width:550px){
     table{

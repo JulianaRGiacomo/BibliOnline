@@ -1,9 +1,9 @@
 @keyframes zoom{
-    0%{transform: scale(1)}
-    50%{transform: scale(0.8)}
-    100%{transform: scale(1)}
+    0%{transform:scale(1)}
+    50%{transform:scale(0.8)}
+    100%{transform:scale(1)}
 }
-* { /*CSS Reset*/
+* {
     font-family:'Roboto Condensed', sans-serif;
     font-size:1em;
     font-style:normal;
@@ -31,7 +31,7 @@ button, button:hover, button:active, button:focus{
     outline:0 !important;
     -moz-outline-style:none
 }
-button::-moz-focus-inner{ /*Corrigir outline no Firefox*/
+button::-moz-focus-inner{
     outline:0 !important;
     -moz-outline-style:none
 
@@ -44,7 +44,7 @@ a:active{
     color:#00A6FF
 }
 a:active i{
-    animation: zoom 0.2s
+    animation:zoom 0.2s
 }
 h1, h2, h3, h4, h5, h6{
     font-family:"Comfortaa", sans-serif;
@@ -61,7 +61,7 @@ h1{
     font-size:2.5em
 }
 h2{
-    line-height: 2em;
+    line-height:2em;
     font-size:2.2em
 }
 h3{

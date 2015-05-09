@@ -36,23 +36,23 @@
                             <td>Harry Potter e A Pedra Filosofal</td>
                             <td>J. K. Rowling</td>
                             <td>Locado</td>
-                            <td><button type="button" class="botão positivo" name="livro" title="Reservar" disabled>Reservar</button></td>
+                            <td><button type="button" class="botão positivo reservar" name="livro" title="Reservar" disabled>Reservar</button></td>
                         </tr>
                         <tr>
                             <td>Java - Como programar</td>
                             <td>Paul J. Deitel, Dr Harvey M. Deitel</td>
                             <td>Disponível</td>
-                            <td><button type="button" class="botão positivo" name="livro" title="Reservar">Reservar</button></td>
+                            <td><button type="button" class="botão positivo reservar" name="livro" title="Reservar">Reservar</button></td>
                         </tr>
                         <tr>
                             <td>Contos Inacabados</td>
                             <td>J. R. R. Tolkien</td>
                             <td>Disponível</td>
-                            <td><button type="button" class="botão positivo" name="livro" title="Reservar">Reservar</button></td>
+                            <td><button type="button" class="botão positivo reservar" name="livro" title="Reservar">Reservar</button></td>
                         </tr>
                 </table>
                 <div id="caixa-botão">
-                    <a class="botão voltar" href="index.php">Voltar</a>
+                    <a class="botão neutro voltar" href="index.php">Voltar</a>
                 </div>
                 <div style="clear:both"></div>
             </section>

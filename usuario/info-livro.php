@@ -52,8 +52,8 @@
             <form id="form" method="post" action="index.php">
                 <input type="text" value="9788539522233" name="isbn" hidden="hidden">
                 <div id="caixa-botão">
-                    <a id="esquerdo" class="botão neutro" href="index.php">Cancelar</a>
-                    <button id="direito" class="botão positivo" type="submit">Reservar</button>
+                    <a id="esquerdo" class="botão neutro cancelar" href="index.php">Cancelar</a>
+                    <button id="direito" class="botão positivo reservar" type="submit">Reservar</button>
                 </div>
                 <div style="clear:both"></div>
             </form>

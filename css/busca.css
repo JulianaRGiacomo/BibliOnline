@@ -4,30 +4,29 @@
     display:inline-block;
     margin:0;
     padding:0;
-    overflow:hidden;
+    overflow:hidden
 }
 #livros{
     max-width:50%;
-    width:50%;
+    width:50%
 }
 #usuarios{
     max-width:39%;
-    width:39%;
+    width:39%
 }
 .filtro{
     font-weight:bold;
-    margin:0 0 0 30px;
+    margin:0 0 0 30px
 }
 #filtros label{
-    margin:0 3px;
-    
+    margin:0 3px
 }
 @media all and (max-width:640px){
     #livros, #usuarios{
         display:block;
         margin:5px auto !important;
-        max-width: 100%;
-        width: 100%;
-        overflow: visible;
+        max-width:100%;
+        width:100%;
+        overflow:visible
     }
 }

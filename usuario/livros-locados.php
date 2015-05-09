@@ -27,17 +27,17 @@
                         <td>A Menina Que Roubava Livros</td>
                         <td>Markus Zusack</td>
                         <td>3/05/2015</td>
-                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Renovar Prazo</button></td>
+                        <td><button type="button" class="botão positivo renovar" name="livro" title="Locar">Renovar Prazo</button></td>
                     </tr>
                     <tr>
                         <td>O Alquimista</td>
                         <td>Paulo Coelho</td>
                         <td>5/05/2015</td>
-                        <td><button type="button" class="botão positivo" name="livro" title="Locar">Renovar Prazo</button></td>
+                        <td><button type="button" class="botão positivo renovar" name="livro" title="Locar">Renovar Prazo</button></td>
                     </tr>
                 </table>
                 <div id="caixa-botão">
-                    <a class="botão voltar" href="index.php">Voltar</a>
+                    <a class="botão neutro voltar" href="index.php">Voltar</a>
                 </div>
                 <div style="clear:both"></div>
             </section>

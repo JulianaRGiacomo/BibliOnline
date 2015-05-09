@@ -83,7 +83,7 @@
                         </tr>
                     </table>
                     <div id="caixa-botão">
-                        <a id="esquerdo" class="botão neutro" href="/funcionario/">Cancelar</a>
+                        <a id="esquerdo" class="botão neutro cancelar" href="/funcionario/">Cancelar</a>
                         <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
                     <div style="clear:both"></div>

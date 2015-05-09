@@ -42,7 +42,7 @@
                 </ul>
                 </ul>
             </section>
-            <div style="clear: both;"></div>
+            <div style="clear:both;"></div>
         </div>
         <div class="full" id="locadores">
             <h2>Para os locadores</h2>
@@ -54,7 +54,7 @@
                     <li>Renove o prazo de devolução online. Nada de ir até a biblioteca!</li>
                 </ul>
             </section>
-            <div style="clear: both;"></div>
+            <div style="clear:both;"></div>
         </div>
         <?php include("footer.html"); ?>
         <script type="text/javascript" src="/js/login.js"></script>
@@ -64,10 +64,10 @@
               $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                   var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  target = target.length ? target :$('[name=' + this.hash.slice(1) +']');
                   if (target.length) {
                     $('html,body').animate({
-                      scrollTop: target.offset().top
+                      scrollTop:target.offset().top
                     }, 700);
                     return false;
                   }

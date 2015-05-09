@@ -85,7 +85,7 @@
                     </table>
                 </div>
                 <div id="caixa-botão">
-                    <a class="botão voltar" href="index.php">Voltar</a>
+                    <a class="botão neutro voltar" href="index.php">Voltar</a>
                 </div>
                 <div style="clear:both"></div>
             </section>

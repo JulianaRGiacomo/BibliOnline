@@ -3,45 +3,38 @@ header{
     background-color:#00A6FF;
     position:absolute;
     width:100%;
-    height: 30px;
+    height:30px;
     left:0;
     right:0;
     top:0;
     padding:5px 0;
     margin:0
 }
-header a:link,
-header a:visited,
-header a:hover,
-header a:active{
-    color:#fff
-}
 header span{
     display:inline-block
 }
+a:link,
+a:visited,
+a:hover,
+a:active{
+    color:#fff
+}
 #home{
-    float: left;
-    margin-left: 15px;
-    margin-top: 3px;
+    float:left;
+    margin-left:15px;
+    margin-top:3px
 }
 #home a{
     font-size:1.5em;
-    font-family: "Comfortaa", sans-serif;
-    letter-spacing: -2px;
+    font-family:"Comfortaa", sans-serif;
+    letter-spacing:-2px;
     line-height:1
 }
 #busca{
     position:relative;
     width:50%;
     max-width:500px;
-    margin-top: 3px;
-}
-#caixa-busca,
-#caixa-busca:focus,
-#caixa-busca:active,
-#lupa:focus{
-    border:none;
-    outline:0
+    margin-top:3px
 }
 #caixa-busca, #lupa{
     background:#fff;
@@ -70,41 +63,46 @@ header span{
     color:#666
 }
 #menu{
-    float: right;
-    margin-right: 15px;
+    float:right;
+    margin-right:15px
 }
 #user, #sair a, #sair i, #config i{
-    font-size: 23px;
-    color: #fff
+    font-size:23px;
+    color:#fff
 }
 #config{
-    margin-right: 20px;
+    margin-right:20px
 }
 #user{
-    position: relative;
-    top: -100px;
-    transition: all 400ms ease-in-out;
-    font-size: 1.4em
+    position:relative;
+    top:-100px;
+    transition:all 400ms ease-in-out;
+    font-size:1.4em
 }
 #config a:hover #user{
-    top: 0;
+    top:0;
 }
-@media all and (max-width:750px) {
+@media all and (max-width:690px) {
     header{
-        padding-top: 10px;
+        padding-top:10px;
         height:70px
     }
     #busca{
         width:100%;
-        top:10px;
+        top:10%
     }
     #caixa-busca{
         width:80%;
         margin-left:-9%
     }
     #menu{
-        position: absolute;
-        top: 10px;
-        right: 0;
+        position:absolute;
+        top:10px;
+        right:0
+    }
+}
+@media all and (max-width:690px) and (min-width:620px) {
+    #busca{
+        top:40px
     }
 }
