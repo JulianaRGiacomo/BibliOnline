@@ -1,22 +1,17 @@
 @import url("../css/form.css");
 @import url("../css/table.css");
 #livros, #usuarios{
-    display:inline-block;
-    margin:0;
+    display:block;
+    margin: 0 0 50px;
     padding:0;
     overflow:hidden
-}
-#livros{
-    max-width:50%;
-    width:50%
-}
-#usuarios{
-    max-width:39%;
-    width:39%
 }
 .filtro{
     font-weight:bold;
     margin:0 0 0 30px
+}
+#filtros{
+    margin-top: 20px
 }
 #filtros label{
     margin:0 3px

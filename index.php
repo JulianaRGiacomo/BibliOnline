@@ -5,7 +5,7 @@
         <meta lang="pt">
         <title>BibliOnline</title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
-        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="./css/index.css">
         <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
