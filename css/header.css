@@ -66,21 +66,17 @@ a:active{
     float:right;
     margin-right:15px
 }
-#user, #sair a, #sair i, #config i{
-    font-size:23px;
+#user, #sair i{
     color:#fff
 }
-#config{
-    margin-right:20px
+#user a{
+    padding-right: 15px;
+    letter-spacing: -2px;
+    font-weight: 300;
+    font-size: 1.5em
 }
-#user{
-    position:relative;
-    top:-100px;
-    transition:all 400ms ease-in-out;
-    font-size:1.4em
-}
-#config a:hover #user{
-    top:0;
+#sair i{
+    font-size: 1.6em
 }
 @media all and (max-width:690px) {
     header{
