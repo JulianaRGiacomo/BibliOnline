@@ -54,7 +54,7 @@
                         <div style="clear:both"></div>
                     </div>
                     <div id="caixa-botão">
-                        <a id="esquerdo" class="botão neutro cancelar" href="/funcionario/">Cancelar</a>
+                        <a id="esquerdo" class="botão neutro cancelar" href="index.php">Cancelar</a>
                         <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
                     </div>
                     <div style="clear:both"></div>
@@ -62,8 +62,8 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="/js/menu.js"></script>
-        <script type="text/javascript" src="/js/formatarCPF.js"></script>
-        <script type="text/javascript" src="/js/form.js"></script>
+        <script type="text/javascript" src="../js/menu.js"></script>
+        <script type="text/javascript" src="../js/formatarCPF.js"></script>
+        <script type="text/javascript" src="../js/form.js"></script>
     </body>
 </html>

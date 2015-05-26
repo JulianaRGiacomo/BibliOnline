@@ -92,7 +92,7 @@
 }
 .caixa{
     background:transparent;
-    border:1px solid #fff !important;
+    border:2px solid #fff !important;
     padding:10px;
     color:#fff;
     border-radius:5px
@@ -121,9 +121,9 @@ a.botão, input.botão{
     color:#00A6FF;
     background:#fff;
     border-radius:5px;
-    border:1px solid #fff !important;
+    border:2px solid #fff !important;
     box-shadow:none;
-    padding:10px
+    padding:10px 20px
 }
 a.botão:hover, input.botão:hover{
     box-shadow:0 0 10px 0px #fff;

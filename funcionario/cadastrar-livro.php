@@ -56,13 +56,13 @@
                     <div class="metade">
                         <div class="campo _1-2 ultimo">
                             <label class="label">Tipo  do livro</label>
-                            <input type="radio" name="tipo" value="didatico" id="didatico" checked><label for="didatico">Didático</label></input>
-                            <input type="radio" name="tipo" value="paradidatico" id="paradidatico"><label for="paradidatico">Paradidático</label></input>
-                            <input type="radio" name="tipo" value="romance" id="romance"><label for="romance">Romance</label></input>
+                            <input type="radio" name="tipo" value="didatico" id="didatico" onclick="verificaTipo()" checked><label for="didatico">Didático</label></input>
+                            <input type="radio" name="tipo" value="paradidatico" id="paradidatico" onclick="verificaTipo()"><label for="paradidatico">Paradidático</label></input>
+                            <input type="radio" name="tipo" value="romance" id="romance" onclick="verificaTipo()"><label for="romance">Romance</label></input>
                         </div>
                         <div id="campo-genero" class="campo _2-2 ultimo">
                             <label class="label" for="genero">Gênero</label>
-                            <input id="genero" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="genero" >
+                            <input id="genero" class="caixa" onfocus="ativar(this)" onblur="desativar(this)" type="text" name="genero" >
                         </div>
                         <div style="clear:both"></div>
                     </div>
@@ -75,8 +75,8 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="/js/menu.js"></script>
-        <script type="text/javascript" src="/js/verificaTipo.js"></script>
-        <script type="text/javascript" src="/js/form.js"></script>
+        <script type="text/javascript" src="../js/menu.js"></script>
+        <script type="text/javascript" src="../js/verificaTipo.js"></script>
+        <script type="text/javascript" src="../js/form.js"></script>
     </body>
 </html>

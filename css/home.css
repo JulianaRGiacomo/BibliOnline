@@ -2,7 +2,7 @@
 @import url("header.css");
 @import url("footer.css");
 #aviso{
-    margin:50px auto 0px;
+    margin:70px auto 0px;
     max-width:500px;
     width:500px;
     border-radius:5px;
@@ -20,7 +20,7 @@
     color:#D8000C;
 }
 nav{
-    padding-top:100px;
+    padding-top:120px;
     max-width:1300px;
     margin:0 auto
  }
@@ -56,7 +56,7 @@ ul#açoes li.item .fa{
     padding:5px
 }
 ul#açoes li.item .fa-lock{
-    font-size:180px
+    font-size:160px
 }
 @media all and (max-width:550px){
     #aviso{

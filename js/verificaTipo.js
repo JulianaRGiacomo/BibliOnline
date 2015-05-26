@@ -4,8 +4,11 @@ function verificaTipo() {
     var z = document.getElementById("campo-genero");
     if(x.checked == true){
         y.disabled = false;
-        z.style.backgroundColor = "#fff";
         z.style.opacity = 1;
+        if(y.focus == true)
+            ativar(y);
+        else
+            desativar(y);
     }
     else{
         y.disabled = true;
@@ -13,4 +16,4 @@ function verificaTipo() {
         z.style.opacity = 0.6;
     }
 }
-setInterval(verificaTipo, 500);
+window.onload(verificaTipo());

@@ -21,6 +21,7 @@
         <section id="splash">
             <span id="logo">bio</span>
             <a onclick="login();" href="javascript:void(0)" class="botão" id="entrar">Entrar</a>
+            
             <section id="info">
                 <h1>BibliOnline</h1>
                 <p>BibliOnline é a aplicação perfeita para bibliotecas e seus associados facilitando o acesso às informações e à reserva de livros.</p>
@@ -57,7 +58,7 @@
             <div style="clear:both;"></div>
         </div>
         <?php include("footer.html"); ?>
-        <script type="text/javascript" src="/js/login.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(function() {
