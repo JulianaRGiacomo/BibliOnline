@@ -1,5 +1,6 @@
 table{
-    width:100%;
+    max-width:100%;
+    min-width: 75%;
     margin:0 auto;
     border:1px solid #00A6FF;
     border-radius:2px;
@@ -19,11 +20,14 @@ th{
     font-weight:bold
 }
 td{
-    padding:7px;
-    border-bottom:1px solid rgba(0,0,0,0.3);
+    padding:15px 0
 }
 tr{
     background-color:#fcfcfc
+}
+.click:hover{
+    transform: scale(1.2);
+    cursor: pointer
 }
 tr:nth-child(odd){
     background-color:#F4FBFF
@@ -31,12 +35,15 @@ tr:nth-child(odd){
 tr:nth-child(even){
     background:#fff
 }
-table.livro th{
-    width:200px
+table.livro{
+    min-width:40%;
+    max-width:70%
 }
 table.livro td{
-    background:#fff;
-    color:#333
+    min-width:200px 
+}
+table.livro th{
+    width:150px
 }
 @media all and (max-width:550px){
     table{

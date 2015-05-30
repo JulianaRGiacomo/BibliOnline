@@ -15,14 +15,9 @@
             <section id="main">
                 <h1>Cadastrar Usuário</h1>
                 <form id="form" method="post" action="home.php">
-                    <div class="campo _1-2-3 primeiro">
+                    <div class="campo primeiro">
                         <label class="label" for="nome">Nome</label>
                         <input id="nome" onload="ativar(this);" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="nome" class="caixa" required autofocus>
-                    </div>
-                    <div class="campo _1-1-3 primeiro">
-                        <label class="label" for="tipo">Tipo</label>
-                        <input id="funcionario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" value="f" name="tipo" required><label for="funcionario">Funcionário</label>
-                        <input id="usuario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" value="c" name="tipo" required><label for="usuario">Usuário</label>
                     </div>
                     <div class="metade">
                         <div class="campo _1-2">
@@ -30,9 +25,10 @@
                             <input id="cpf" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="cpf" class="caixa" onkeypress="javascript:mascara(this, cpf_mask);"  maxlength="14"  required>
                         </div>
                         <div class="campo _2-2">
-                            <label class="label" for="rg">RG</label>
-                            <input id="rg" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="rg" class="caixa" required>
-                        </div>
+                        <label class="label" for="tipo">Tipo</label>
+                        <input id="funcionario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" value="f" name="tipo" required><label for="funcionario">Funcionário</label>
+                        <input id="usuario" onfocus="ativar(this);" onblur="desativar(this);" type="radio" value="c" name="tipo" required checked><label for="usuario">Usuário</label>
+                    </div>
                         <div style="clear:both"></div>
                     </div>
                     <fieldset>
@@ -62,19 +58,13 @@
                     </fieldset>
                     <fieldset>
                         <legend>Contato</legend>
-                        <div class="campo">
+                        <div class="campo _1-2-3 e ultimo">
                             <label class="label" for="email">E-mail</label>
                             <input id="email" onfocus="ativar(this);" onblur="desativar(this);" type="email" name="email" class="caixa" required>
                         </div>
-                        <div class="metade">
-                            <div class="campo _1-2 ultimo">
-                                <label class="label" for="telefone">Telefone</label>
-                                <input id="telefone" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="telefone" class="caixa">
-                            </div>
-                            <div class="campo _2-2 ultimo">
-                                <label class="label" for="celular">Celular</label>
-                                <input id="celular" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="celular" class="caixa" required>
-                            </div>
+                        <div class="campo _1-1-3 d ultimo">
+                            <label class="label" for="celular">Celular</label>
+                            <input id="celular" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="celular" class="caixa" required>
                         </div>
                     </fieldset>
                     <div id="caixa-botão">
@@ -86,7 +76,6 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
         <script type="text/javascript" src="../js/formatarCPF.js"></script>
         <script type="text/javascript" src="../js/form.js"></script>
     </body>

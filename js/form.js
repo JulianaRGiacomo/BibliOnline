@@ -8,20 +8,14 @@ function desativar(element){
     x.style.background = "#fff";
     x.childNodes[1].style.color = "#666";
 }
-function destacaPrimeiroCampo(){
-    var x = document.activeElement;
-    ativar(x);
-};
 function verificaDisabled(){
     var x = document.getElementsByClassName("caixa");
     var i;
-    
     for(i = 0; i < x.length; i++){
         if(x[i].disabled){
             x[i].parentElement.style.backgroundColor = "#f1f1f1";
             x[i].parentElement.style.opacity = "0.7";
         }
     }
-};
-window.onload = destacaPrimeiroCampo();
-setInterval(verificaDisabled, 100);
+}
+window.onload(verificaDisabled());

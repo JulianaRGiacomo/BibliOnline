@@ -84,14 +84,13 @@
                     </table>
                     <div id="caixa-botão">
                         <a id="esquerdo" class="botão neutro cancelar" href="index.php">Cancelar</a>
-                        <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
+                        <button id="direito" class="botão positivo" type="submit">Devolvidos</button>
                     </div>
                     <div style="clear:both"></div>
                 </form>
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
         <script type="text/javascript" src="../js/formatarCPF.js"></script>
         <script type="text/javascript" src="../js/form.js"></script>
     </body>

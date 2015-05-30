@@ -20,6 +20,10 @@
                     <th>Título</th>
                     <td>Toda Poesia</td>
                 </tr>
+                <!--<tr>
+                    <th>Subtítulo</th>
+                    <td></td>
+                </tr>-->
                 <tr>
                     <th>Autor</th>
                     <td>Paulo Leminski</td>
@@ -60,6 +64,5 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
     </body>
 </html>

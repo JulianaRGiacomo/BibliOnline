@@ -14,9 +14,8 @@
         <?php include("../header.html"); ?>
         <div id="conteudo">
             <section id="main" style="width:100%;">
-                <h1>Listar Locações</h1>
+                <h1>Últimas Locações</h1>
                 <table>
-                    <caption>Últimas Locações</caption>
                     <tr>
                         <th>Nome</th>
                         <th>CPF</th>
@@ -79,6 +78,5 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
     </body>
 </html>

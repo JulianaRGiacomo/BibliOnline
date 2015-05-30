@@ -38,27 +38,24 @@
                         </div>
                         <div class="campo _3-3">
                             <label class="label" for="quantidade">Quantidade</label>
-                            <input id="quantidade" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="number" name="quantidade" pattern="[0-9]+$" required>
+                            <input id="quantidade" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="number" min="1" step="1" value="1" name="quantidade" pattern="[0-9]+$" required>
                         </div>
                         <div style="clear:both"></div>
                     </div>
-                    <div class="metade">
-                        <div class="campo _1-2">
-                            <label class="label" for="isbn">ISBN</label>
-                            <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
-                        </div>
-                        <div class="campo _2-2">
-                            <label class="label" for="tags">Tags (separe por vírgulas)</label>
-                            <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" required>
-                        </div>
-                        <div style="clear:both"></div>
+                    <div class="campo _1-1-3 e">
+                        <label class="label" for="isbn">ISBN</label>
+                        <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
+                    </div>
+                    <div class="campo _1-2-3 d">
+                        <label class="label" for="tags">Tags (separe por vírgulas)</label>
+                        <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" required>
                     </div>
                     <div class="metade">
                         <div class="campo _1-2 ultimo">
                             <label class="label">Tipo  do livro</label>
-                            <input type="radio" name="tipo" value="didatico" id="didatico" onclick="verificaTipo()" checked><label for="didatico">Didático</label></input>
-                            <input type="radio" name="tipo" value="paradidatico" id="paradidatico" onclick="verificaTipo()"><label for="paradidatico">Paradidático</label></input>
-                            <input type="radio" name="tipo" value="romance" id="romance" onclick="verificaTipo()"><label for="romance">Romance</label></input>
+                            <input type="radio" name="tipo" value="didatico" id="didatico" onclick="verificaTipo()" onfocus="ativar(this)" onblur="desativar(this)" checked><label for="didatico">Didático</label></input>
+                            <input type="radio" name="tipo" value="paradidatico" id="paradidatico" onclick="verificaTipo()" onfocus="ativar(this)" onblur="desativar(this)"><label for="paradidatico">Paradidático</label></input>
+                            <input type="radio" name="tipo" value="romance" id="romance" onclick="verificaTipo()" onfocus="ativar(this)" onblur="desativar(this)"><label for="romance">Romance</label></input>
                         </div>
                         <div id="campo-genero" class="campo _2-2 ultimo">
                             <label class="label" for="genero">Gênero</label>
@@ -75,7 +72,6 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
         <script type="text/javascript" src="../js/verificaTipo.js"></script>
         <script type="text/javascript" src="../js/form.js"></script>
     </body>

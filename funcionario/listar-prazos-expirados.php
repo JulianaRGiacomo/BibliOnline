@@ -14,9 +14,8 @@
         <?php include("../header.html"); ?>
         <div id="conteudo">
             <section id="main" style="width:100%;">
-                <h1>Prazos Expirados</h1>
+                <h1>Prazos de Devolução Expirados</h1>
                 <table>
-                    <caption>Atrasos</caption>
                     <tr>
                         <th>Nome</th>
                         <th>Email</th>
@@ -85,6 +84,5 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
     </body>
 </html>

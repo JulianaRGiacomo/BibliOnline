@@ -20,7 +20,7 @@
                     <tr>
                         <th>Título</th>
                         <th>Autor</th>
-                        <th>Prazo</th>
+                        <th>Prazo de Devolução</th>
                         <th>Renovar</th>
                     </tr>
                     <tr>
@@ -43,6 +43,5 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/menu.js"></script>
     </body>
 </html>
