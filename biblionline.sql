@@ -14,7 +14,7 @@ INSERT INTO TIPO_LIVRO (DESC_TIPO)
 ;
 
 CREATE TABLE LIVRO(
-	ISBN INT(13)UNIQUE NOT NULL,
+	ISBN INT(13) NOT NULL,
     TITULO VARCHAR(70) NOT NULL,
     SUBTITULO VARCHAR(50) DEFAULT NULL,
     AUTOR VARCHAR(100) NOT NULL,
@@ -23,27 +23,69 @@ CREATE TABLE LIVRO(
     QUANTIDADE INT (3) NOT NULL,
     TAGS VARCHAR (100),
     COD_TIPO INT (1) NOT NULL DEFAULT 1,
-    GENERO VARCHAR (15) DEFAULT NULL,
+    GENERO VARCHAR (25) DEFAULT NULL,
     PRIMARY KEY(ISBN),
     CHECK(TIPO = 1 OR TIPO = 2 OR TIPO = 3),
 	FOREIGN KEY (COD_TIPO) REFERENCES TIPO_LIVRO(COD_TIPO)
 );
 
+/*INSERT INTO LIVRO
+    VALUES
+    (
+        8532511015,
+        'Harry Potter e a Pedra Filosofal',
+        'Livro 1',
+        'J. K. Rowling',
+        'Rocco',
+        2000,
+        3,
+        'Fantasia, Ficção, Aventura, Magia, Literatura Inglesa',
+        3,
+        'Fantasia/Ficção'
+    ),
+    (
+        8576651858,
+        'O Alquimista',
+        NULL,
+        'Paulo Coelho',
+        'Planeta',
+        1988,
+        2,
+        'Fantasia, Ficção, Nacional',
+        3,
+        'Fantasia/Ficção'
+    ),
+    (
+        9788576055631,
+        'Java: Como Programar',
+        '8ª Edição',
+        'Paul J. Deitel; Dr. Harvey M. Deitel',
+        'Pearson Education',
+        2010,
+        1,
+        'Java, Informática, Programação',
+        1,
+        NULL
+    )
+;
+*/
 CREATE TABLE USUARIO(
-	CPF INT (11) UNIQUE NOT NULL,
+	CPF INT (11) NOT NULL,
     NOME VARCHAR (50) NOT NULL,
     APELIDO VARCHAR (30) NOT NULL,
-    EMAIL VARCHAR (40) DEFAULT NULL UNIQUE,
+    EMAIL VARCHAR (40) NOT NULL,
 	SENHA VARCHAR (40) NOT NULL,
-    TELEFONE INT (12) NOT NULL UNIQUE,
+    TELEFONE INT (12) NOT NULL,
     TIPO VARCHAR (1) NOT NULL,
     RUA VARCHAR (50) NOT NULL,
     BAIRRO VARCHAR (30) NOT NULL,
     NUMERO VARCHAR (7) NOT NULL,
     COMPLEMENTO VARCHAR (30) DEFAULT NULL,
     CEP VARCHAR (9) NOT NULL,
-    PRIMARY KEY(CPF),
-    CHECK(TIPO = 'f' OR TIPO = 'c')
+    PRIMARY KEY (CPF),
+    UNIQUE (EMAIL),
+    UNIQUE (TELEFONE),
+    CHECK (TIPO = 'f' OR TIPO = 'c')
 );
 
 CREATE TABLE STATUS_LOCACAO(
@@ -89,7 +131,7 @@ CREATE TABLE STATUS_RESERVA(
 
 INSERT INTO STATUS_RESERVA (DESC_STATUS) 
     VALUES
-        ('Reservada'),
+        ('Ativa'),
         ('Finalizada'),
         ('Cancelada')
 ;
