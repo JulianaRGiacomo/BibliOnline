@@ -14,41 +14,41 @@
         <div id="conteudo">
             <section id="main">
                 <h1>Cadastrar Livro</h1>
-                <form id="form" method="post" action="home.php">
+                <form id="form" method="post" action="processa-livro.php">
                     <div class="campo">
                         <label class="label" for="titulo">Título</label>
-                        <input id="titulo" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="titulo" required autofocus>
+                        <input id="titulo" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="titulo" maxlength="70" required autofocus>
                     </div>
                     <div class="campo">
                         <label class="label" for="subtitulo">Subtítulo</label>
-                        <input class="caixa" onfocus="ativar(this);" onblur="desativar(this);" id="subtitulo" type="text" name="subtitulo" >
+                        <input class="caixa" onfocus="ativar(this);" onblur="desativar(this);" id="subtitulo" type="text" name="subtitulo" maxlength="50">
                     </div>
                     <div class="campo">
                         <label class="label" for="autor">Autor</label>
-                        <input id="autor" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="autor" required>
+                        <input id="autor" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="autor" maxlength="100" required>
                     </div>
                     <div class="metade">
                         <div class="campo _1-2">
                             <label class="label" for="editora">Editora</label>
-                            <input id="editora" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="editora" required>
+                            <input id="editora" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="editora" maxlength="30" required>
                         </div>
                         <div class="campo _2-3">
                             <label class="label" for="ano">Ano de Publicação</label>
-                            <input id="ano" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="ano" required>
+                            <input id="ano" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="number" min="1900" max="2015" step="1" value="2015" name="ano" required>
                         </div>
                         <div class="campo _3-3">
                             <label class="label" for="quantidade">Quantidade</label>
-                            <input id="quantidade" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="number" min="1" step="1" value="1" name="quantidade" pattern="[0-9]+$" required>
+                            <input id="quantidade" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="number" min="1" step="1" value="1" name="quantidade" required>
                         </div>
                         <div style="clear:both"></div>
                     </div>
                     <div class="campo _1-1-3 e">
                         <label class="label" for="isbn">ISBN</label>
-                        <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" required>
+                        <input id="isbn" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="isbn" maxlength="13" required>
                     </div>
                     <div class="campo _1-2-3 d">
                         <label class="label" for="tags">Tags (separe por vírgulas)</label>
-                        <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" required>
+                        <input id="tags" class="caixa" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="tags" maxlength="100" required>
                     </div>
                     <div class="metade">
                         <div class="campo _1-2 ultimo">
@@ -59,7 +59,7 @@
                         </div>
                         <div id="campo-genero" class="campo _2-2 ultimo">
                             <label class="label" for="genero">Gênero</label>
-                            <input id="genero" class="caixa" onfocus="ativar(this)" onblur="desativar(this)" type="text" name="genero" >
+                            <input id="genero" class="caixa" onfocus="ativar(this)" onblur="desativar(this)" type="text" name="genero" maxlength="15">
                         </div>
                         <div style="clear:both"></div>
                     </div>

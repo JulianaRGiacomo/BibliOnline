@@ -7,10 +7,21 @@ function mascara(o,f){
 function execmascara(){
 	v_obj.value=v_fun(v_obj.value);
 }
-        function cpf_mask(v){
+function cpf_mask(v){
 	v = v.replace(/\D/g,"");
 	v = v.replace(/(\d{3})(\d)/,"$1.$2");
 	v = v.replace(/(\d{3})(\d)/,"$1.$2");
 	v = v.replace(/(\d{3})(\d)/,"$1-$2");
+	return v;
+}
+function cel_mask(v){
+	v = v.replace(/\D/g,"");
+	v = v.replace(/(\d{2})(\d)/,"($1)$2");
+	v = v.replace(/(\d{5})(\d)/,"$1-$2");
+	return v;
+}
+function cep_mask(v){
+	v = v.replace(/\D/g,"");
+	v = v.replace(/(\d{5})(\d)/,"$1-$2");
 	return v;
 }
