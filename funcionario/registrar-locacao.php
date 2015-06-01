@@ -58,7 +58,7 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/formatarCPF.js"></script>
+        <script type="text/javascript" src="../js/formatar.js"></script>
         <script type="text/javascript" src="../js/form.js"></script>
     </body>
 </html>

@@ -31,42 +31,37 @@
                     </div>
                         <div style="clear:both"></div>
                     </div>
-                    <fieldset>
-                        <legend>Endereço</legend>
-                        <div class="metade">
-                            <div class="campo _1-2">
-                                <label class="label" for="rua">Rua</label>
-                                <input id="rua" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="rua" class="caixa" maxlength="50" required>
-                            </div>
-                            <div class="campo _2-2">
-                                <label class="label" for="bairro">Bairro</label>
-                                <input id="bairro" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="bairro" class="caixa" maxlength="30" required>
-                            </div>
+                    <div class="metade">
+                        <div class="campo _1-2">
+                            <label class="label" for="rua">Rua</label>
+                            <input id="rua" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="rua" class="caixa" maxlength="50" required>
                         </div>
-                        <div class="campo _1-3">
-                            <label class="label" for="numero">Número</label>
-                            <input id="numero" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="numero" class="caixa" maxlength="7" required>
+                        <div class="campo _2-2">
+                            <label class="label" for="bairro">Bairro</label>
+                            <input id="bairro" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="bairro" class="caixa" maxlength="30" required>
                         </div>
-                        <div class="campo _2-3">
-                            <label class="label" for="complemento">Complemento</label>
-                            <input id="complemento" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="complemento" class="caixa" maxlength="30" required>
-                        </div>
-                        <div class="campo _3-3">
-                            <label class="label" for="cep">CEP</label>
-                            <input id="cep" onfocus="ativar(this);" onblur="desativar(this);" type="cep" name="cep" class="caixa" onkeypress="javascript:mascara(this,cep_mask);" maxlength="9" required>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Contato</legend>
-                        <div class="campo _1-2-3 e ultimo">
-                            <label class="label" for="email">E-mail</label>
-                            <input id="email" onfocus="ativar(this);" onblur="desativar(this);" type="email" name="email" class="caixa" maxlength="40" required>
-                        </div>
-                        <div class="campo _1-1-3 d ultimo">
-                            <label class="label" for="celular">Celular</label>
-                            <input id="celular" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="celular" class="caixa" onkeypress="javascript:mascara(this, cel_mask);"  maxlength="14" required>
-                        </div>
-                    </fieldset>
+                    </div>
+                    <div class="campo _1-3">
+                        <label class="label" for="numero">Número</label>
+                        <input id="numero" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="numero" class="caixa" maxlength="7" required>
+                    </div>
+                    <div class="campo _2-3">
+                        <label class="label" for="complemento">Complemento</label>
+                        <input id="complemento" onfocus="ativar(this);" onblur="desativar(this);" type="text" name="complemento" class="caixa" maxlength="30" required>
+                    </div>
+                    <div class="campo _3-3">
+                        <label class="label" for="cep">CEP</label>
+                        <input id="cep" onfocus="ativar(this);" onblur="desativar(this);" type="cep" name="cep" class="caixa" onkeypress="javascript:mascara(this,cep_mask);" maxlength="9" required>
+                    </div>
+                    <div class="campo _1-2-3 e ultimo">
+                        <label class="label" for="email">E-mail</label>
+                        <input id="email" onfocus="ativar(this);" onblur="desativar(this);" type="email" name="email" class="caixa" maxlength="40" required>
+                    </div>
+                    <div class="campo _1-1-3 d ultimo">
+                        <label class="label" for="celular">Celular</label>
+                        <input id="celular" onfocus="ativar(this);" onblur="desativar(this);" type="tel" name="celular" class="caixa" onkeypress="javascript:mascara(this, cel_mask);"  maxlength="14" required>
+                    </div>
+                    
                     <div id="caixa-botão">
                         <a id="esquerdo" class="botão neutro cancelar" href="index.php">Cancelar</a>
                         <button id="direito" class="botão positivo" type="submit">Cadastrar</button>
@@ -76,7 +71,7 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/formatarCPF.js"></script>
+        <script type="text/javascript" src="../js/formatar.js"></script>
         <script type="text/javascript" src="../js/form.js"></script>
     </body>
 </html>

@@ -23,11 +23,11 @@
                         </div>
                         <div class="campo _1-2" style="float:none;">
                             <label class="label" for="email">E-mail</label>
-                            <input type="text" name="email" id="email" class="caixa" value="ricardo@mail.com" onfocus="ativar(this)" onblur="desativar(this)">
+                            <input type="email" name="email" id="email" class="caixa" value="ricardo@mail.com" onfocus="ativar(this)" onblur="desativar(this)">
                         </div>
                         <div class="campo _3-3">
                             <label class="label" for="telefone">Telefone</label>
-                            <input type="text" name="telefone" id="telefone" class="caixa" value="99999-9999" onfocus="ativar(this)" onblur="desativar(this)">
+                            <input type="tel" name="telefone" id="telefone" class="caixa" value="99999-9999" onfocus="ativar(this)" onblur="desativar(this)" onkeypress="mascara(this,cel_mask)">
                         </div>
                         <div style="clear:both"></div>
                     </div>
@@ -50,5 +50,6 @@
         </div>
         <?php include("../footer.html"); ?>
         <script type="text/javascript" src="../js/form.js"></script>
+        <script type="text/javascript" src="../js/formatar.js"></script>
     </body>
 </html>

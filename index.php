@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
         <meta lang="pt">
         <title>BibliOnline</title>
@@ -10,13 +11,12 @@
     </head>
     <body>
         <div id="login" style="visibility:hidden;opacity:0">
-            <div id="form">
-                <form action="" method="post">
-                    <input type="text" class="caixa" name="email" placeholder="E-mail">
-                    <input class="caixa" name="senha" placeholder="Senha" type="password">
-                    <input class="botão" id="ir" type="submit" value="Ir!">
-                </form>
-            </div>
+            <form id="form" action="login.php" method="post">
+                <input type="email" class="caixa" name="email" placeholder="E-mail" maxlength="100">
+                <input class="caixa" name="senha" placeholder="Senha" type="password">
+                <input class="botão" id="ir" type="submit" value="Ir!">
+                <div style="clear:both"></div>
+            </form>
         </div>
         <section id="splash">
             <span id="logo">bio</span>

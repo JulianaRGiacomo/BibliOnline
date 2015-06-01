@@ -12,12 +12,12 @@
     <body>
         <?php include("../header.html"); ?>
         <div id="conteudo">
-            <a href="livros-locados.php">
-                <div id="aviso">
-                    <i class="fa fa-exclamation-triangle"></i> Você possui livro(s) locado(s) com prazo de devolução esgotado!
-                </div>
-            </a>
             <nav>
+                <a href="livros-locados.php">
+                    <div id="aviso">
+                        <i class="fa fa-exclamation-triangle"></i> Você possui livro(s) locado(s) com prazo de devolução esgotado!
+                    </div>
+                </a>
                 <ul id="açoes">
                     <li class="item"><a href="acervo.php"><i class="fa fa-university"></i><br>Consultar Acervo</a></li>
                     <li class="item"><a href="historico.php"><i class="fa fa-history"></i><br>Histórico</a></li>

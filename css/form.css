@@ -138,24 +138,6 @@ input[type="radio"] ~ label{
 .caixa option:disabled{
     color:#999
 }
-fieldset{
-    width:100%;
-    padding:0 !important;
-    border:none;
-    margin:0;
-    background:#fff
-}
-legend{
-    font-family:"Roboto Condensed";
-    text-transform:uppercase;
-    font-size:1em;
-    color:#666;
-    border-left:1px solid rgba(0,0,0,0.3);
-    border-right:1px solid rgba(0,0,0,0.3);
-    width:calc(100% - 2px);
-    background:#fff;
-    padding:5px 0 0
-}
 #caixa-botão{
     width:80%;
     margin:50px auto 0
@@ -273,6 +255,9 @@ button.negativo{
 .negativo:hover:before{
     color:#fff
 }
+#esquerdo, #direito{
+    margin-top: 20px
+}
 #esquerdo{
     float:left
 }
@@ -280,17 +265,32 @@ button.negativo{
     float:right
 }
 @media all and (max-width:700px) {
-    fieldset{
-        width:95%
-    }
     #main{
         padding-top:100px
     }
     h1{
         font-size:2em
     }
+    #form{
+        width: 90%;
+    }
+    .campo._3-3,
+    .metade .campo,
     .campo{
+        float:left;
         border:1px solid rgba(0,0,0,0.3) !important;
+        border-radius: 0 !important;
         width:100% !important
+    }
+    .campo.primeiro:first-child{
+        border-radius: 2px 2px 0 0 !important
+    }
+    .campo.ultimo:last-child{
+        border-radius: 0 0 2px 2px !important
+    }
+    #esquerdo, #direito{
+        float:none;
+        display: inline-block;
+        margin: 5px auto;
     }
 }
