@@ -1,4 +1,4 @@
-/*CREATE DATABASE BIBLIONLINE;*/
+﻿/*CREATE DATABASE BIBLIONLINE;*/
 
 CREATE TABLE TIPO_LIVRO(
     COD_TIPO INT (1) NOT NULL AUTO_INCREMENT,
@@ -66,14 +66,25 @@ INSERT INTO LIVRO
         'Java, Informática, Programação',
         1,
         NULL
-    )
-;
+    );
+
+CREATE TABLE STATUS_USUARIO(
+	COD_STATUS INT (1) NOT NULL AUTO_INCREMENT,
+	STATUS VARCHAR(15) NOT NULL,
+	DESC_STATUS VARCHAR (30) NOT NULL,
+	PRIMARY KEY (COD_STATUS)
+);
+
+INSERT INTO STATUS_USUARIO ( "Regular", "Apto para locação e reserva") ;
+INSERT INTO STATUS_USUARIO ( "Irregular", "Em débito com a biblioteca");
+
 CREATE TABLE USUARIO(
 	CPF VARCHAR (11) NOT NULL,
     NOME VARCHAR (50) NOT NULL,
     APELIDO VARCHAR (30) NOT NULL,
     EMAIL VARCHAR (40) NOT NULL,
 	SENHA VARCHAR (40) NOT NULL,
+	STATUS INT (1) NOT NULL,
     TELEFONE VARCHAR (12) NOT NULL,
     TIPO VARCHAR (1) NOT NULL DEFAULT 'U',
     RUA VARCHAR (50) NOT NULL,
@@ -82,10 +93,12 @@ CREATE TABLE USUARIO(
     COMPLEMENTO VARCHAR (30) DEFAULT NULL,
     CEP VARCHAR (9) NOT NULL,
     PRIMARY KEY (CPF),
+	FOREIGN KEY (STATUS) REFERENCES STATUS_USUARIO(COD_STATUS),
     UNIQUE (EMAIL),
     UNIQUE (TELEFONE),
     CHECK (TIPO = 'F' OR TIPO = 'U')
 );
+
 
 INSERT INTO USUARIO
     VALUES
@@ -95,6 +108,7 @@ INSERT INTO USUARIO
             'Funcionário',
             'func@rio.com',
             '40bd001563085fc35165329ea1ff5c5ecbdbbeef',
+            1,
             '(82)99999-9999',
             'F',
             'Rua do Funcionário',
@@ -109,6 +123,7 @@ INSERT INTO USUARIO
             'Usuário',
             'usu@rio.com',
             '40bd001563085fc35165329ea1ff5c5ecbdbbeef',
+            2,
             '(82)99099-9999',
             'U',
             'Rua do Usuário',
@@ -188,14 +203,3 @@ CREATE TABLE CONFIGURACOES(
     PRAZO_DEVOLUCAO INT (2) NOT NULL,
     TEMPO_ATRASO INT (2) NOT NULL
 );
-
-/*Inserindo as configurações iniciais*/
-INSERT INTO CONFIGURACOES 
-    VALUES
-    (
-        FALSE,
-        7,
-        7,
-        0
-    )
-;
