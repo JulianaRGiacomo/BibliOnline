@@ -197,14 +197,18 @@ button.botão:disabled:hover{
 }
 a.positivo,
 button.positivo{
-    background:#00A6FF;
+    background:#2196F3;
     color:#fff;
-    border-color:#00A6FF
+    border-color:#2196F3
 }
 .positivo:focus,
 .positivo:hover{
-    background:#006aff;
-    border-color:#006aff
+    background:#1565C0;
+    border-color:#1565C0
+}
+.positivo:active{
+    background:#0D47A1;
+    border-color:#0D47A1
 }
 .positivo:before{
     color:#fff;
@@ -230,6 +234,9 @@ button.neutro{
     background:#333;
     color:#fff
 }
+.neutro:active{
+    background:#000;
+}
 .neutro:before{
     color:#333
 }
@@ -241,13 +248,16 @@ button.neutro{
 }
 a.negativo,
 button.negativo{
-    color:#ef0000;
-    border-color:#ef0000
+    color:#F44336;
+    border-color:#F44336
 }
 .negativo:focus,
 .negativo:hover{
     color:#fff;
-    background:#ef0000
+    background:#F44336
+}
+.negativo:active{
+    background:#C62828
 }
 .negativo:before{
     content:"\f00d";

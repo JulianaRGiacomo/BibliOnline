@@ -41,7 +41,7 @@ ul#açoes a:active,
 ul#açoes a:active .fa,
 ul#açoes a:hover,
 ul#açoes li.item:hover .fa{
-    color:#00A6FF
+    color:#2196F3
 }
 ul#açoes li.item{
     display:inline-block;

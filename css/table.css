@@ -2,7 +2,7 @@ table{
     max-width:100%;
     min-width: 75%;
     margin:0 auto;
-    border:1px solid #00A6FF;
+    border:1px solid #2196F3;
     border-radius:2px;
     border-collapse:separate;
     border-spacing:0
@@ -15,7 +15,7 @@ caption{
 }
 th{
     color:#fff;
-    background:#00A6FF;
+    background:#2196F3;
     padding:10px 5px;
     font-weight:bold
 }
