@@ -35,14 +35,14 @@ tr:nth-child(odd){
 tr:nth-child(even){
     background:#fff
 }
-table.livro{
+table.bloco{
     min-width:40%;
     max-width:70%
 }
-table.livro td{
+table.bloco td{
     min-width:200px 
 }
-table.livro th{
+table.bloco th{
     width:150px
 }
 @media all and (max-width:550px){

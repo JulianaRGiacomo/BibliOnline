@@ -264,6 +264,16 @@ button.negativo{
 #direito{
     float:right
 }
+.regular, .irregular{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.regular{
+    color:#00C853
+}
+.irregular{
+    color:#D50000
+}
 @media all and (max-width:700px) {
     #main{
         padding-top:100px
