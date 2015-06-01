@@ -188,3 +188,14 @@ CREATE TABLE CONFIGURACOES(
     PRAZO_DEVOLUCAO INT (2) NOT NULL,
     TEMPO_ATRASO INT (2) NOT NULL
 );
+
+/*Inserindo as configurações iniciais*/
+INSERT INTO CONFIGURACOES 
+    VALUES
+    (
+        FALSE,
+        7,
+        7,
+        0
+    )
+;
