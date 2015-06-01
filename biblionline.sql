@@ -75,8 +75,11 @@ CREATE TABLE STATUS_USUARIO(
 	PRIMARY KEY (COD_STATUS)
 );
 
-INSERT INTO STATUS_USUARIO ( "Regular", "Apto para locação e reserva") ;
-INSERT INTO STATUS_USUARIO ( "Irregular", "Em débito com a biblioteca");
+INSERT INTO STATUS_USUARIO (STATUS ,DESC_STATUS) 
+    VALUES
+        ( 'Regular', 'Apto para locação e reserva'),
+        ( 'Irregular', 'Em débito com a biblioteca')
+;
 
 CREATE TABLE USUARIO(
 	CPF VARCHAR (11) NOT NULL,
