@@ -1,5 +1,4 @@
-﻿/*CREATE DATABASE BIBLIONLINE;*/
-
+﻿
 CREATE TABLE TIPO_LIVRO(
     COD_TIPO INT (1) NOT NULL AUTO_INCREMENT,
 	DESC_TIPO VARCHAR (15) NOT NULL,
@@ -13,6 +12,19 @@ INSERT INTO TIPO_LIVRO (DESC_TIPO)
         ('Romance')
 ;
 
+CREATE TABLE STATUS_LIVRO(
+	COD_STATUS INT (1) NOT NULL AUTO_INCREMENT,
+	DESC_STATUS VARCHAR (15) NOT NULL,
+	PRIMARY KEY (COD_STATUS)
+);
+
+INSERT INTO STATUS_LIVRO (DESC_STATUS) 
+    VALUES
+        ('Disponível'),
+        ('Locado'),
+        ('Reservado')
+;
+
 CREATE TABLE LIVRO(
 	ISBN VARCHAR (13) NOT NULL,
     TITULO VARCHAR (70) NOT NULL,
@@ -24,9 +36,11 @@ CREATE TABLE LIVRO(
     TAGS VARCHAR (100),
     COD_TIPO INT (1) NOT NULL DEFAULT 1,
     GENERO VARCHAR (25) DEFAULT NULL,
+	COD_STATUS INT (1) NOT NULL DEFAULT 1,
     PRIMARY KEY (ISBN),
     CHECK (TIPO = 1 OR TIPO = 2 OR TIPO = 3),
-	FOREIGN KEY (COD_TIPO) REFERENCES TIPO_LIVRO (COD_TIPO)
+	FOREIGN KEY (COD_TIPO) REFERENCES TIPO_LIVRO (COD_TIPO),
+	FOREIGN KEY (COD_STATUS) REFERENCES STATUS_LIVRO (COD_STATUS)
 );
 
 INSERT INTO LIVRO
@@ -41,7 +55,8 @@ INSERT INTO LIVRO
         3,
         'Fantasia, Ficção, Aventura, Magia, Literatura Inglesa',
         3,
-        'Fantasia/Ficção'
+        'Fantasia/Ficção',
+         1
     ),
     (
         8576651858,
@@ -53,7 +68,8 @@ INSERT INTO LIVRO
         2,
         'Fantasia, Ficção, Nacional',
         3,
-        'Fantasia/Ficção'
+        'Fantasia/Ficção',
+        1
     ),
     (
         9788576055631,
@@ -65,7 +81,8 @@ INSERT INTO LIVRO
         1,
         'Java, Informática, Programação',
         1,
-        NULL
+        NULL,
+        1
     );
 
 CREATE TABLE STATUS_USUARIO(
@@ -87,7 +104,7 @@ CREATE TABLE USUARIO(
     APELIDO VARCHAR (30) NOT NULL,
     EMAIL VARCHAR (40) NOT NULL,
 	SENHA VARCHAR (40) NOT NULL,
-	STATUS INT (1) NOT NULL,
+	STATUS INT (1) NOT NULL DEFAULT 1,
     TELEFONE VARCHAR (12) NOT NULL,
     TIPO VARCHAR (1) NOT NULL DEFAULT 'U',
     RUA VARCHAR (50) NOT NULL,
