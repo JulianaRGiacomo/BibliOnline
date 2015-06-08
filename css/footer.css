@@ -6,8 +6,16 @@ footer{
     background:#2196F3;
     box-shadow:-1px 0px 3px rgba(0, 0, 0, 0.3)
 }
+.break{
+    display: none;
+}
 @media all and (max-width:400px){
     footer{
         height:40px
+    }
+}
+@media all and (max-width:690px) {
+    .break{
+        display:block
     }
 }

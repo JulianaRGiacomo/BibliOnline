@@ -4,10 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <meta lang="pt">
-        <title>Registrar Locação - BibliOnline</title>
+        <title>Registrar Locação | BibliOnline</title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
         <link rel="stylesheet" href="../css/form.css">
-        <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa:700|Roboto:300|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <?php include("../header.html"); ?>
@@ -58,7 +58,7 @@
             </section>
         </div>
         <?php include("../footer.html"); ?>
-        <script type="text/javascript" src="../js/formatarCPF.js"></script>
+        <script type="text/javascript" src="../js/formatar.js"></script>
         <script type="text/javascript" src="../js/form.js"></script>
     </body>
 </html>

@@ -70,7 +70,8 @@
     line-height:1.5em;
     font-size:1.8em
 }
-.full:nth-child(odd) ul li:after{
+.full:nth-child(odd) ul li:before{
+    float: right;
     content:'\f00c';
     font-family:'FontAwesome';
     margin:0 15px
@@ -139,4 +140,61 @@ a.botão:active, input.botão:active{
 }
 #esquerdo{
     float:left
+}
+@media all and (max-width:690px) {
+    #login,
+    #form{
+        position: absolute;
+        width: 100%;
+        left:0;
+        top:10px
+    }
+    .caixa{
+        width: 30%
+    }
+    #splash{
+        width: 100vw
+    }
+    #logo,
+    #logo:hover,
+    #info{
+        float: none;
+        position: relative;
+        display: block;
+        left: initial;
+        margin: 0 auto
+    }
+    #logo,
+    #logo:hover{
+        font-size: 5em
+    }
+    #info{
+        max-width: 90%;
+        margin-top: 50px
+    }
+    #info h1{
+        font-size: 3em;
+        line-height: 90%
+    }
+    .full ul{
+        opacity: 0.7;
+        line-height: 90%;
+        font-size: 1.8em
+    }
+    .full section{
+        margin: 20px auto 0;
+        width: 95%
+    }
+    .full section ul{
+        padding: 0
+    }
+    .full:nth-child(odd) ul li,
+    .full:nth-child(even) ul li{
+        margin: 20px auto;
+        text-align: center
+    }
+    .full:nth-child(odd) ul li:before,
+    .full:nth-child(even) ul li:before{
+        content: ""
+    }
 }

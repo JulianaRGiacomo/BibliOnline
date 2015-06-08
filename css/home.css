@@ -2,7 +2,7 @@
 @import url("header.css");
 @import url("footer.css");
 #aviso{
-    margin:70px auto 0px;
+    margin:0 auto;
     max-width:500px;
     width:500px;
     border-radius:5px;
@@ -58,17 +58,24 @@ ul#açoes li.item .fa{
 ul#açoes li.item .fa-lock{
     font-size:160px
 }
-@media all and (max-width:550px){
+@media all and (max-width:690px) {
     #aviso{
         font-size:100%;
         position:relative;
-        margin:80px auto 0;
         left:initial;
-        width:80%
+        width:90%
     }
     #aviso i{
         float:left;
-        margin-left:10px;
-        font-size:50px
+        margin-left:20px;
+        margin-top:5px;
+        font-size:1.8em
+    }
+    ul#açoes li.item .fa{
+        font-size: 4em
+    }
+    ul#açoes li.item{
+        vertical-align: middle;
+        width:30%
     }
 }
