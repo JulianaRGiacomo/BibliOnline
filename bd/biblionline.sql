@@ -3,7 +3,7 @@ USE biblionline;
 
 GRANT select, insert, update, delete
 ON biblionline.*
-TO bb_user@localhost identified by 'password';
+TO bb_user@localhost identified by 'bb_p@$$*!';
 
 CREATE TABLE TIPO_LIVRO(
     COD_TIPO INT (1) NOT NULL AUTO_INCREMENT,
