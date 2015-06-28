@@ -98,4 +98,11 @@ $conn = db_connect();
 
     return $conn->query($query);
 }
+                             
+//Função para listar o histórico do usuário
+function historico_usuario($cpf){
+    $conn = db_connect();
+    
+    
+}
 ?>
